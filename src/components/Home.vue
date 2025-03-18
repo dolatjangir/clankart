@@ -1,17 +1,18 @@
-<script setup>
- 
-</script> 
-
 <template>
- <div class="container ">
-  <!-- <div class="header h-[110px] w-fit   flex ">
-    <div class="inner-header mx-[19.5px] pl-2  flex flex-row items-center">
-      <div class="clankart-img ml-[6.5px] h-[55px] w-[150px] mr-[32.5px]">
-        <a href="/" class="py-[5.7px] ">
-          <img width="150" height="55" src="https://www.clankart.com/user-uploads/static-assets/logo.png"/>
+<div>
+<div class="header xl:h-[110px] sm:h-[60px] fixed bg-white z-20 w-screen   flex ">
+    <div class="inner-header 2xl:mx-[19.5px] pl-2 w-screen flex flex-row items-center justify-between">
+        
+      <div class="clankart-img flex items-center justify-between xl:ml-[6.5px] 2xl:h-[55px] 2xl:w-[150px]  sm:h-[40px] xl:w-[120px] xl:h-[48px] xl:pl-2 2xl:mr-[32.5px] sm:mr-4">
+       <!-- hamburger -->
+       <div class="sm:flex xl:hidden sm:pl-[6px]">
+            <i class="text-xl fa-solid fa-bars"></i>
+        </div>
+        <a href="/" class="py-[5.7px] pl-4 ">
+          <img class="2xl:w-[150px] 2xl:h-[55px] sm:w-[120px] sm:h-[48px] " width="150" height="55" src="https://www.clankart.com/user-uploads/static-assets/logo.png"/>
         </a>
       </div>
-      <div class="header-secondory-things mb-4 flex flex-row">
+      <div class="header-secondory-things mb-4 flex flex-row sm:hidden xl:flex">
       <div class="header-search-bar mr-[16.2px] h-[47px] flex">
         <div class="border border-[#0083ca] flex flex-row w-[358px]">
         <input class="px-[13px] py-[9.7px] w-full" placeholder="Book Name/Author/Subject/Publiser"/></div>
@@ -19,54 +20,29 @@
        
     </div>
      <div class="mr-[26px] yellow-button ">
-        <button class="px-[9.7px] py-[10.7px] border border-[#e1b70d] bg-[#fcec52] h-[47px] w-[150px] rounded-sm ">Sell Used Books</button></div>
+        <button class="px-[9.7px] py-[10.7px] sm:hidden 2xl:flex border border-[#e1b70d] bg-[#fcec52] h-[47px] w-[150px] rounded-sm ">Sell Used Books</button>
+        <button class="px-[9.7px] py-[10.7px] border sm:flex 2xl:hidden border-[#e1b70d] bg-[#fcec52] h-[47px] w-[100px] justify-center items-center text-2xl rounded-sm ">+SELL</button>
+    </div>
       </div>
     
-      <div class="account-and-cart-button text-sm flex text-[#5b5b5b]">
+      <div class="account-and-cart-button text-sm flex sm:hidden 2xl:flex text-[#5b5b5b]">
         <button class="mr-[16.2px] text-center"><i class="text-lg fa-solid fa-user"></i><br/><span class="">Account</span></button>
-        <button class="text-sm"><i class="text-lg fa-solid fa-cart-shopping"></i>Cart</button>
+        <button class="flex flex-col text-sm"><i class="text-lg fa-solid fa-cart-shopping"></i><span>Cart</span></button>
+      </div>
+      <!-- sm icons -->
+      <div class="account-and-cart-button text-sm flex  sm:flex xl:hidden text-[#5b5b5b] pr-4">
+        <button class="mr-[16.2px] text-center"><i class="text-lg fa-solid fa-search"></i><br/></button>
+        <button class="text-sm"><i class="text-lg fa-solid fa-cart-shopping"></i></button>
       </div>
     </div>
-  </div> -->
-<div class="header h-[110px] w-full flex flex-wrap items-center justify-between px-4 md:px-8 lg:px-12">
-    <div class="flex items-center space-x-4">
-        <a href="/" class="h-[55px] w-[150px]">
-            <img width="150" height="55" src="https://www.clankart.com/user-uploads/static-assets/logo.png" alt="Logo"/>
-        </a>
-    </div>
-
-    <div class="flex flex-wrap items-center space-x-4">
-        <div class="flex w-full sm:w-auto border border-[#0083ca] rounded-md overflow-hidden">
-            <input class="px-3 py-2 w-full sm:w-[300px]" placeholder="Book Name/Author/Subject/Publisher"/>
-            <button class="bg-[#0083ca] px-4 py-2 text-white text-lg">Search</button>
-        </div>
-
-        <button class="border border-[#e1b70d] bg-[#fcec52] px-4 py-2 text-sm rounded-md">
-            Sell Used Books
-        </button>
-    </div>
-
-    <div class="flex items-center space-x-4 text-[#5b5b5b]">
-        <button class="text-center">
-            <i class="text-lg fa-solid fa-user"></i>
-            <br/>
-            <span>Account</span>
-        </button>
-        <button class="text-center">
-            <i class="text-lg fa-solid fa-cart-shopping"></i>
-            <br/>
-            <span>Cart</span>
-        </button>
-    </div>
-</div>
-
-  <!-- page-2 -->
-  <div class="page-2 bg-[url('https://www.clankart.com/static-assets/big-image-books.webp')]  bg-no-repeat bg-center  bg-cover h-[400px] w-fit">
-    <div class="mx-[173.5px] pt-[65px]">
-      <div class="text-white">
-      <h1 class="pb-[6.5px] font-serif font-semibold text-center text-2xl">Buy and Sell Old Books Online in India for Actual Money!</h1>
-      <p class="pt-5 mb-[1rem] text-xl font-semibold">At Clankart you can buy second hand books and sell old books online at best prices. Selling used books online for cash made easy with Clankart!</p>
-       <div class="page-2-boxes flex items-center justify-center">
+  </div>
+ <!-- page-2 -->
+ <div class="page-2 bg-[url('https://www.clankart.com/static-assets/big-image-books.webp')] bg-fixed  bg-no-repeat bg-center  bg-cover xl:h-[400px] sm:h-[318px] w-fit">
+    <div class="2xl:mx-[173.5px] xl:mx-[104px] sm:mx-[21px] text-center  pt-[65px]">
+      <div class="text-white ">
+      <h1 class="pb-[6.5px] font-serif font-semibold text-center sm:text-lg xl:text-2xl">Buy and Sell Old Books Online in India for Actual Money!</h1>
+      <p class="pt-5 2xl:mb-[1rem] sm:text-lg xl:text-xl font-semibold">At Clankart you can buy second hand books and sell old books online at best prices. Selling used books online for cash made easy with Clankart!</p>
+       <div class="page-2-boxes  xl:flex sm:hidden items-center justify-center">
         <!-- page-2-ka-first-box  -->
         <div class="bg-[#d3d3d3] w-[175px] h-[150px] relative left-1 rounded-lg">
           <div class=" py-[32.5px] px-[32.5px]">
@@ -86,112 +62,42 @@
     </div>
     </div>
   </div>
-   <!-- page-3 -->
+  <!-- part-2-boxes -->
+  <div class="page-2-boxes  xl:hidden sm:flex py-8 items-center justify-center">
+        <!-- page-2-ka-first-box  -->
+        <div class="bg-[#d3d3d3] sm:w-[145px] sm:h-[130px] lg:w-[175px] lg:h-[150px] relative left-1 rounded-lg">
+          <div class="sm:py-5 sm:px-5 lg:py-[32.5px] lg:px-[32.5px]">
+          <img class="w-[100px] h-[55px]" src="https://www.clankart.com/static-assets/hand-books.svg"/>
+          <button class="text-[#0083ca] bg-[#f1faff] hover:bg-[#0083ca] hover:text-white tracking-tighter text-xs rounded-sm w-[100px] font-semibold px-[9.7px] py-[8.1px] mt-[9.7px]">Buy Used Books</button>
+        </div>
+        </div>
+        <div class="bg-white w-9 h-9 rounded-full z-10 text-black flex items-center justify-center" >or</div>
+        <!-- page-2-ka-second-box  -->
+        <div class="bg-[#fff2c7] sm:w-[145px] sm:h-[130px] lg:w-[175px] lg:h-[150px] relative right-1 rounded-lg">
+          <div class="sm:py-5 sm:px-5 lg:py-[32.5px] lg:px-[32.5px]">
+          <img class="w-[100px] h-[55px]" src="https://www.clankart.com/static-assets/hand-money.svg"/>
+          <button class="text-[#0083ca] bg-[#f1faff] hover:bg-[#0083ca] hover:text-white tracking-tighter text-xs rounded-sm w-[100px] font-semibold px-[9.7px] py-[8.1px] mt-[9.7px]">Sell old Books</button>
+        </div>
+        </div>
+       </div>
+        <!-- page-3 -->
     <div class="">
       <div class="pt-[32.5px] px-[30px] mx-4">
         <h1 class="mb-[6.5px] text-lg">Newly Added Books</h1>
         <div class="flex overflow-hidden w-[100%]">
           <div class="animate-scroll transition-all flex whitespace-nowrap space-x-2 ">
           <!-- 1 -->
-          <div class="first w-[218px] flex-shrink-0">
-            <img class="w-[218px] rounded-sm h-[149px]" src="https://www.clankart.com/user-uploads/advert/Harry…r_Book_Collection_for_Sale1739278389790_thumb.jpg"/>
+          <div v-for="book in books" :key="book.id" class="first w-[218px] flex-shrink-0">
+            <img class="w-[218px] rounded-sm h-[149px]" :src="book.image" alt="book img"/>
             <div class="py-[13px]">
-              <p class="mb-[6.5px]  overflow-hidden text-ellipsis">Harry Potter Book Collection for Sale</p>
+              <p class="mb-[6.5px]  overflow-hidden text-ellipsis">{{ book.title }}</p>
               <p class="price my-[6.5px]">₹1500</p>
               <div class="flex  justify-end">
               <button class="bg-[#0083ca] text-white rounded-sm  px-[17.2px] py-[8.15px]">Buy Now</button>
             </div></div>
           </div>
-           <!-- 2 -->
-           <div class="first w-[218px] flex-shrink-0">
-            <img class="w-[218px] rounded-sm h-[149px]" src="https://www.clankart.com/user-uploads/advert/Harry…r_Book_Collection_for_Sale1739278389790_thumb.jpg"/>
-            <div class="py-[13px]">
-              <p class="mb-[6.5px]  overflow-hidden text-ellipsis">Harry Potter Book Collection for Sale</p>
-              <p class="price my-[6.5px]">₹1500</p>
-              <div class="flex  justify-end">
-              <button class="bg-[#0083ca] text-white rounded-sm  px-[17.2px] py-[8.15px]">Buy Now</button>
-            </div></div>
-          </div>
-           <!-- 3 -->
-           <div class="first w-[218px] flex-shrink-0">
-            <img class="w-[218px] rounded-sm h-[149px]" src="https://www.clankart.com/user-uploads/advert/Harry…r_Book_Collection_for_Sale1739278389790_thumb.jpg"/>
-            <div class="py-[13px]">
-              <p class="mb-[6.5px] overflow-hidden text-ellipsis">Harry Potter Book Collection for Sale</p>
-              <p class="price my-[6.5px]">₹1500</p>
-              <div class="flex  justify-end">
-              <button class="bg-[#0083ca] text-white rounded-sm  px-[17.2px] py-[8.15px]">Buy Now</button>
-            </div></div>
-          </div>
-           <!-- 4 -->
-           <div class="first w-[218px] flex-shrink-0">
-            <img class="w-[218px] rounded-sm h-[149px]" src="https://www.clankart.com/user-uploads/advert/Harry…r_Book_Collection_for_Sale1739278389790_thumb.jpg"/>
-            <div class="py-[13px]">
-              <p class="mb-[6.5px]  overflow-hidden text-ellipsis">Harry Potter Book Collection for Sale</p>
-              <p class="price my-[6.5px]">₹1500</p>
-              <div class="flex  justify-end">
-              <button class="bg-[#0083ca] text-white rounded-sm  px-[17.2px] py-[8.15px]">Buy Now</button>
-            </div></div>
-          </div>
-           <!-- 5 -->
-           <div class="first w-[218px] flex-shrink-0">
-            <img class="w-[218px] rounded-sm h-[149px]" src="https://www.clankart.com/user-uploads/advert/Harry…r_Book_Collection_for_Sale1739278389790_thumb.jpg"/>
-            <div class="py-[13px]">
-              <p class="mb-[6.5px]  overflow-hidden text-ellipsis">Harry Potter Book Collection for Sale</p>
-              <p class="price my-[6.5px]">₹1500</p>
-              <div class="flex  justify-end">
-              <button class="bg-[#0083ca] text-white rounded-sm  px-[17.2px] py-[8.15px]">Buy Now</button>
-            </div></div>
-          </div>
-           <!-- 6 -->
-           <div class="first w-[218px] flex-shrink-0">
-            <img class="w-[218px] rounded-sm h-[149px]" src="https://www.clankart.com/user-uploads/advert/Harry…r_Book_Collection_for_Sale1739278389790_thumb.jpg"/>
-            <div class="py-[13px]">
-              <p class="mb-[6.5px]  overflow-hidden text-ellipsis">Harry Potter Book Collection for Sale</p>
-              <p class="price my-[6.5px]">₹1500</p>
-              <div class="flex  justify-end">
-              <button class="bg-[#0083ca] text-white rounded-sm  px-[17.2px] py-[8.15px]">Buy Now</button>
-            </div></div>
-          </div>
-           <!-- 7 -->
-           <div class="first w-[218px] flex-shrink-0">
-            <img class="w-[218px] rounded-sm h-[149px]" src="https://www.clankart.com/user-uploads/advert/Harry…r_Book_Collection_for_Sale1739278389790_thumb.jpg"/>
-            <div class="py-[13px]">
-              <p class="mb-[6.5px]   overflow-hidden text-ellipsis">Harry Potter Book Collection for Sale</p>
-              <p class="price my-[6.5px]">₹1500</p>
-              <div class="flex  justify-end">
-              <button class="bg-[#0083ca] text-white rounded-sm  px-[17.2px] py-[8.15px]">Buy Now</button>
-            </div></div>
-          </div>
-           <!-- 8 -->
-           <div class="first w-[218px] flex-shrink-0">
-            <img class="w-[218px] rounded-sm h-[149px]" src="https://www.clankart.com/user-uploads/advert/Harry…r_Book_Collection_for_Sale1739278389790_thumb.jpg"/>
-            <div class="py-[13px]">
-              <p class="mb-[6.5px]   overflow-hidden text-ellipsis">Harry Potter Book Collection for Sale</p>
-              <p class="price my-[6.5px]">₹1500</p>
-              <div class="flex  justify-end">
-              <button class="bg-[#0083ca] text-white rounded-sm  px-[17.2px] py-[8.15px]">Buy Now</button>
-            </div></div>
-          </div>
-           <!-- 9 -->
-           <div class="first w-[218px] flex-shrink-0 ">
-            <img class="w-[218px] rounded-sm h-[149px]" src="https://www.clankart.com/user-uploads/advert/Harry…r_Book_Collection_for_Sale1739278389790_thumb.jpg"/>
-            <div class="py-[13px]">
-              <p class="mb-[6.5px]  overflow-hidden text-ellipsis">Harry Potter Book Collection for Sale</p>
-              <p class="price my-[6.5px]">₹1500</p>
-              <div class="flex  justify-end">
-              <button class="bg-[#0083ca] text-white rounded-sm  px-[17.2px] py-[8.15px]">Buy Now</button>
-            </div></div>
-          </div>
-           <!-- 10 -->
-           <div class="first w-[218px] flex-shrink-0">
-            <img class="w-[218px] rounded-sm h-[149px]" src="https://www.clankart.com/user-uploads/advert/Harry…r_Book_Collection_for_Sale1739278389790_thumb.jpg"/>
-            <div class="py-[13px]">
-              <p class="mb-[6.5px]   overflow-hidden text-ellipsis">Harry Potter Book Collection for Sale</p>
-              <p class="price my-[6.5px]">₹1500</p>
-              <div class="flex  justify-end">
-              <button class="bg-[#0083ca] text-white rounded-sm  px-[17.2px] py-[8.15px]">Buy Now</button>
-            </div></div>
-          </div></div>
+           
+        </div>
         </div>
         <div class="flex justify-center pt-4">
         <button class="border px-[20.5px] py-[10.7px] rounded-sm border-[#fcec52] text-center  bg-[#fcec52]">Explore all used Books</button>
@@ -199,12 +105,12 @@
       </div>
     </div>
     <!-- page-4 -->
-     <div class="">
+    <div class="">
       <div class="py-[32.5px]">
           <div class="pb-[6.5px] flex items-center justify-center ">
           <h1 class=" mb-[6.5px] text-3xl w-[655px]  border-b border-[#0083CA] text-neutral-900 font-serif  text-center font-bold">Clankart - A Student-to-Student Bookstore</h1>
         </div>
-          <div class="text-neutral-600 text-xl tracking-tighter text-center font-normal   px-11">
+          <div class="text-neutral-600 text-xl tracking-tighter text-center font-normal  sm:px-4 xl:px-11">
           <p class="pt-5 mb-[13px]">Are you a college going student and are upset with the increasing number of used books after each new semester, or you are a regular book reader who after reading the books, keep the old books on the bookshelves or in a cupboard and forget them? If yes, then Clankart is just made for you!</p>
           <p class="pt-5 mb-[13px]">Clankart is India's leading platform where you can sell used books online. At Clankart, we help people to sell their used books to another book lover just like them at interesting prices. </p>
           <p class="pt-5 mb-[13px]">Selling and buying books on Clankart is a win-win situation for both the buyer and the seller. How? Let's see. As a seller, you can earn some good amount of money by selling your old books (which you don't even need) to another person at good prices. And being a buyer, you can save some money by buying the second hand books directly from the book owner.</p>
@@ -213,22 +119,22 @@
       </div>
      </div>
      <!-- page-5 -->
-      <div class="pt-[3rem] ">
-        <div class="two-bg pl-28 border-l-4 border-[#0083CA] py-12 px-4">
-          <h1 class="mb-[9.7px] text-[#5b5b5b] text-2xl font-semibold">Have used, old books cluttering on your bookshelves?</h1>
-          <p class="text-[#555] text-lg  ">Why not sell your old books and convert them into 'Real Money' into your account?</p>
-          <p class="pt-4 flex">
-            <span class="text-[#555] text-lg px-[9.7px]">
+     <div class="pt-[3rem] ">
+        <div class="two-bg xl:h-[239.8px] sm:h-[270px] xl:pl-28 border-l-4 border-[#0083CA] sm:py-5 xl:py-12 xl:px-4 sm:px-2">
+          <h1 class="mb-[9.7px] text-[#5b5b5b] xl:text-2xl sm:text-lg font-semibold">Have used, old books cluttering on your bookshelves?</h1>
+          <p class="text-[#555] xl:text-lg sm:text-sm ">Why not sell your old books and convert them into 'Real Money' into your account?</p>
+          <p class="pt-4 flex sm:flex-col sm:items-center xl:items-baseline 2xl:flex-row">
+            <span class="text-[#555] xl:text-lg sm:text-sm px-[9.7px]">
               "Sell your used books, directly to a book lover just like you for actual money."
             </span>
-            <span class=" w-[152px] h-[42px] flex border border-[#0083CA] text-[#fff] rounded-sm justify-center items-center bg-[#0083CA]">
+            <span class="mt-6 w-[152px] h-[42px] flex border border-[#0083CA] text-[#fff] rounded-sm justify-center items-center bg-[#0083CA]">
               Post Free Ad Now
             </span>
           </p>
         </div>
       </div>
-      <!-- page-6 -->
-       <div class="pt-[3rem] bg-[#eff2f5]">
+        <!-- page-6 -->
+        <div class="pt-[3rem] bg-[#eff2f5]">
         <div class="px-[30px] mx-4">
            <div class="pb-[6.5px] flex items-center justify-center ">
           <h1 class=" mb-[6.5px] text-2xl w-[605px]  border-b border-[#0083CA] text-[#333] font-serif  text-center font-bold">
@@ -242,15 +148,15 @@
       </div>
       </div>
       <!-- three boxess -->
-      <ul class="mt-[2.5rem] pb-[1rem] flex">
+      <ul class="mt-[2.5rem] pb-[1rem] flex sm:flex-col xl:flex-row">
         <!-- first box -->
-        <li class="px-[9.7px] mb-[32.5px] w-[33.3%] ">
+        <li class="px-[9.7px] mb-[32.5px] sm:w-fit xl:w-[33.3%] ">
           <!-- main box -->
           <div class="pt-8   rounded-lg bg-[#fff]">
             <!-- box ke andar ka first box -->
              <div class=" border-b border-neutral-200">
             <div class="px-[29.5px] ">
-              <div class="px-[10px] py-[5px] bg-[#0083CA]  inline-flex min-w-9 min-h-[56px]  items-center rounded-b-xl relative left-52 bottom-10 text-[#fff]">Step 1</div>
+              <div class="px-[10px] py-[5px] bg-[#0083CA]  inline-flex min-w-9 min-h-[56px]  items-center rounded-b-xl relative sm:left-48 md:left-60 lg:left-72 sm:bottom-10  xl:left-32 xl:bottom-10 2xl:left-52 2xl:bottom-10 text-[#fff]">Step 1</div>
              <div class="mb-[1rem]">
                <div class="px-[2.25rem] text-center  flex justify-center mb-4">
                 <div class="border border-[#eef9ff] w-[80px] h-[80px] rounded-full flex justify-center items-center">
@@ -265,18 +171,18 @@
           </div>
           <!-- box ke andar ka second box -->
            <div class="px-[29.2px] py-4">
-            <p class="text-center mb-5 font-semibold text-2xl h-[134px] text-[#5f5f5f]">Post an ad on Clankart describing your book details to sell your old books online.</p>
+            <p class="text-center mb-5 font-semibold text-2xl xl:h-[160px] 2xl:h-[134px] text-[#5f5f5f]">Post an ad on Clankart describing your book details to sell your old books online.</p>
            </div>
           </div>
         </li>
         <!-- second box -->
-        <li class="px-[9.7px] mb-[32.5px] w-[33.3%]  ">
+        <li class="px-[9.7px] mb-[32.5px] sm:w-fit xl:w-[33.3%]  ">
           <!-- main box -->
           <div class="pt-8 rounded-lg bg-[#fff]">
             <!-- box ke andar ka first box -->
              <div class=" border-b border-neutral-200">
             <div class="px-[29.5px] ">
-              <div class="px-[10px] py-[5px] bg-[#0083CA]  inline-flex min-w-9 min-h-[56px]  items-center rounded-b-xl relative left-52 bottom-10 text-[#fff]">Step 2</div>
+              <div class="px-[10px] py-[5px] bg-[#0083CA]  inline-flex min-w-9 min-h-[56px]  items-center rounded-b-xl relative sm:left-48 md:left-60 lg:left-72 sm:bottom-10 xl:left-32 2xl:left-52 bottom-10 text-[#fff]">Step 2</div>
              <div class="mb-[1rem]">
                <div class="px-[2.25rem] text-center  flex justify-center mb-4">
                 <div class="border border-[#eef9ff] w-[80px] h-[80px] rounded-full flex justify-center items-center">
@@ -291,18 +197,18 @@
           </div>
           <!-- box ke andar ka second box -->
            <div class="px-[29.2px] py-4">
-            <p class="text-center mb-5 font-semibold text-2xl  h-[134px] text-[#5f5f5f]">Set the price for your books at which you want to sell them.</p>
+            <p class="text-center mb-5 font-semibold text-2xl  xl:h-[160px] 2xl:h-[134px] text-[#5f5f5f]">Set the price for your books at which you want to sell them.</p>
            </div>
           </div>
         </li>
         <!-- trird box -->
-        <li class="px-[9.7px] mb-[32.5px] w-[33.3%] ">
+        <li class="px-[9.7px] mb-[32.5px] sm:w-fit xl:w-[33.3%] ">
           <!-- main box -->
           <div class="pt-8  rounded-lg bg-[#fff]">
             <!-- box ke andar ka first box -->
              <div class=" border-b border-neutral-200">
             <div class="px-[29.5px] ">
-              <div class="px-[10px] py-[5px] bg-[#0083CA]  inline-flex min-w-9 min-h-[56px]  items-center rounded-b-xl relative left-52 bottom-10 text-[#fff]">Step 3</div>
+              <div class="px-[10px] py-[5px] bg-[#0083CA]  inline-flex min-w-9 min-h-[56px]  items-center rounded-b-xl relative sm:left-48 md:left-60 lg:left-72 sm:bottom-10 xl:left-32 2xl:left-52 bottom-10 text-[#fff]">Step 3</div>
              <div class="mb-[1rem]">
                <div class="px-[2.25rem] flex justify-center text-center mb-4">
                 <div class="border border-[#eef9ff] w-[80px] h-[80px] rounded-full flex justify-center items-center">
@@ -317,19 +223,20 @@
           </div>
           <!-- box ke andar ka second box -->
            <div class="px-[29.2px] py-4">
-            <p class="text-center mb-5 font-semibold text-2xl h-[134px] text-[#5f5f5f]">You will get money into your account once you receive an order for your book.</p>
+            <p class="text-center mb-5 font-semibold text-2xl xl:h-[160px] 2xl:h-[134px] text-[#5f5f5f]">You will get money into your account once you receive an order for your book.</p>
            </div>
           </div>
         </li>
       </ul>
+      
        </div>
        <!-- page-7 -->
-        <div class=" flex justify-center bg-[#eff2f5] pb-[3rem]">
-          <iframe class=" rounded-lg" width="700" height="380" src="https://www.youtube.com/embed/Rwj6vi55hHw">
+       <div class=" flex justify-center bg-[#eff2f5] pb-[3rem]">
+          <iframe class="sm:w-[300px] md:w-[345px] lg:w-[395px] sm:h-[315px] xl:w-[560px] xl:h-[315px] 2xl:w-[700px] 2xl:h-[380px] rounded-lg" src="https://www.youtube.com/embed/Rwj6vi55hHw">
 
           </iframe>
         </div>
-        <!-- page-8 -->
+         <!-- page-8 -->
          <div class="py-[3rem]">
            <div class="pb-[6.5px] flex items-center justify-center ">
           <h1 class=" mb-[6.5px] text-3xl   border-b border-[#0083CA] text-[#292929] font-serif  text-center font-bold">
@@ -341,16 +248,16 @@
         <p class="pt-5 text-[#555] mb-[1rem] text-[1.2rem] ">Well, you can sell your old used books very easily on Clankart for actual cash.</p>
         <p class="pt-[.5rem] px-[1.2rem]  text-[#555] mb-[1rem] text-[1.2rem]">,<span class="font-bold text-3xl text-amber-600">"</span>Earning money by selling your old books is just <span class="font-semibold text-[#555]">3 steps</span> away from you <span class="text-2xl text-[#0083ca] font-semibold">:)</span><span class="font-bold text-3xl text-amber-600">"</span></p>
       </div>
-      <ul class="mt-[2.5rem] pb-[1rem] flex space-x-2">
+      <ul class="mt-[2.5rem] pb-[1rem] flex sm:flex-col xl:flex-row">
         <!-- first box -->
-        <li class="px-[9.7px] ml-1 mb-[32.5px] w-[32.3%] bg-[#fff2c7] rounded-lg">
+        <li class="px-[9.7px] ml-1 mb-[32.5px] sm:w-fit xl:w-[32.3%] bg-[#fff2c7] rounded-lg">
           <div class="  ">
           <!-- main box -->
           <div class="pt-8  ">
             <!-- box ke andar ka first box -->
              <div class=" border-b border-neutral-200">
             <div class="px-[29.5px] ">
-              <div class="px-[10px] py-[5px] bg-[#0083CA]  inline-flex min-w-9 min-h-[56px]  items-center rounded-b-xl relative left-52 bottom-10 text-[#fff]">Step 1</div>
+              <div class="px-[10px] py-[5px] bg-[#0083CA]  inline-flex min-w-9 min-h-[56px]  items-center rounded-b-xl relative sm:left-48 md:left-60 lg:left-72 sm:bottom-10  xl:left-32 xl:bottom-10 2xl:left-52 2xl:bottom-10 text-[#fff]">Step 1</div>
              <div class="mb-[1rem]">
                <div class="px-[2.25rem] text-center  flex justify-center items-center mb-4">
                 <div class="border-8 border-[#fff] w-[90px] h-[90px] rounded-full flex justify-center items-center">
@@ -366,19 +273,19 @@
           </div>
           <!-- box ke andar ka second box -->
            <div class="px-[29.2px] py-4">
-            <p class="text-center mb-5 font-semibold text-2xl h-[134px] text-[#5f5f5f]">Search from over thousands of used books listed on Clankart.</p>
+            <p class="text-center mb-5 font-semibold text-2xl xl:h-[160px] 2xl:h-[134px] text-[#5f5f5f]">Search from over thousands of used books listed on Clankart.</p>
            </div>
           </div></div>
         </li>
         <!-- second box -->
-        <li class=" mb-[32.5px] w-[32.3%] bg-[#fff2c7] rounded-lg ">
+        <li class=" mb-[32.5px] mx-2 sm:w-fit xl:w-[32.3%] bg-[#fff2c7] rounded-lg ">
           <div class="   ">
           <!-- main box -->
           <div class="pt-8 ">
             <!-- box ke andar ka first box -->
              <div class=" border-b border-neutral-200">
             <div class="px-[29.5px] ">
-              <div class="px-[10px] py-[5px] bg-[#0083CA]  inline-flex min-w-9 min-h-[56px]  items-center rounded-b-xl relative left-52 bottom-10 text-[#fff]">Step 2</div>
+              <div class="px-[10px] py-[5px] bg-[#0083CA]  inline-flex min-w-9 min-h-[56px]  items-center rounded-b-xl relative sm:left-48 md:left-60 lg:left-72 sm:bottom-10  xl:left-32 xl:bottom-10 2xl:left-52 2xl:bottom-10  text-[#fff]">Step 2</div>
              <div class="mb-[1rem]">
                <div class="px-[2.25rem] text-center  flex justify-center mb-4">
                 <div class="border-8 border-[#fff] w-[90px] h-[90px] rounded-full flex justify-center items-center">
@@ -393,19 +300,19 @@
           </div>
           <!-- box ke andar ka second box -->
            <div class="px-[29.2px] py-4">
-            <p class="text-center mb-5 font-semibold text-2xl  h-[134px] text-[#5f5f5f]">Then simply place the order by clicking on 'Buy Now' button.</p>
+            <p class="text-center mb-5 font-semibold text-2xl  xl:h-[160px] 2xl:h-[134px] text-[#5f5f5f]">Then simply place the order by clicking on 'Buy Now' button.</p>
            </div>
           </div></div>
         </li>
         <!-- trird box -->
-        <li class="px-[9.7px] mb-[32.5px] w-[32.3%] bg-[#fff2c7]  rounded-lg">
+        <li class="px-[9.7px] mb-[32.5px] sm:mx-2 xl:mx-0 sm:w-fit xl:w-[32.3%] bg-[#fff2c7]  rounded-lg">
           <div class="  ">
           <!-- main box -->
           <div class="pt-8  ">
             <!-- box ke andar ka first box -->
              <div class=" border-b border-neutral-200">
             <div class="px-[29.5px] ">
-              <div class="px-[10px] py-[5px] bg-[#0083CA]  inline-flex min-w-9 min-h-[56px]  items-center rounded-b-xl relative left-52 bottom-10 text-[#fff]">Step 3</div>
+              <div class="px-[10px] py-[5px] bg-[#0083CA]  inline-flex min-w-9 min-h-[56px]  items-center rounded-b-xl relative sm:left-48 md:left-60 lg:left-72 sm:bottom-10  xl:left-32 xl:bottom-10 2xl:left-52 2xl:bottom-10  text-[#fff]">Step 3</div>
              <div class="mb-[1rem]">
                <div class="px-[2.25rem] flex justify-center text-center mb-4">
                 <div class="border-8 border-[#fff] w-[90px] h-[90px] rounded-full flex justify-center items-center">
@@ -420,22 +327,22 @@
           </div>
           <!-- box ke andar ka second box -->
            <div class="px-[29.2px] py-4">
-            <p class="text-center mb-5 font-semibold text-2xl h-[134px] text-[#5f5f5f]">The books will be delivered to you at your doorstep!</p>
+            <p class="text-center mb-5 font-semibold text-2xl xl:h-[160px] 2xl:h-[134px] text-[#5f5f5f]">The books will be delivered to you at your doorstep!</p>
            </div>
           </div></div>
         </li>
       </ul>
          </div>
-         <!-- page-9 -->
+          <!-- page-9 -->
           <div class="py-[3rem] bg-[#deeafe]">
             <div class="container px-[15px] ">
               <h1 class="text-[#555] pt-5 mb-[1rem] text-center text-4xl font-bold ">Read from our <span class="text-[#0083ca]">  Blog</span></h1>
-              <div class="mt-[32.5px] flex">
+              <div class="mt-[32.5px] flex sm:flex-col xl:flex-row">
                 <!-- first-box -->
                 <div class="px-[9.5px] pb-8">
                   <div class="mr-[19.5px]">
-                    <img class="rounded-t-lg" width="282" height="282" src="https://www.clankart.com/user-uploads/blog/Where_and_how_to_sell_old_books_online.webp"/>
-                    <div class="w-[282px] py-[26px] px-[29.2px] bg-[#fff] rounded-b-lg">
+                    <img class="rounded-t-lg xl:w-[213.5px] xl:h-[213.5px] 2xl:w-[282px] 2xl:h-[282px]" src="https://www.clankart.com/user-uploads/blog/Where_and_how_to_sell_old_books_online.webp"/>
+                    <div class="2xl:w-[282px] xl:[213.5px] py-[26px] px-[29.2px] bg-[#fff] rounded-b-lg">
                       <h1 class="mb-[6.5px] text-xl font-semibold">Where and how to sell old books online?</h1>
                       <p class="mb-[1rem] text-[#7e7d7d] font-semibold">On Clankart to sell used books online, all you just need is to follow these 3 steps and your used second hand book will be sold.- Create an account on Clankart.- Describe details and set the price at which you want to sell your books.
 - Get the money transferred into your account...</p>
@@ -445,8 +352,8 @@
                  <!-- second-box -->
                  <div class="px-[9.5px] pb-8">
                   <div class="mr-[19.5px]">
-                    <img class="rounded-t-lg" width="282" height="282" src="https://www.clankart.com/user-uploads/blog/What_to_do_with_old_books.webp"/>
-                    <div class="w-[282px] py-[26px] px-[29.2px] bg-[#fff] rounded-b-lg">
+                    <img class="rounded-t-lg xl:w-[213.5px] xl:h-[213.5px] 2xl:w-[282px] 2xl:h-[282px]"  src="https://www.clankart.com/user-uploads/blog/What_to_do_with_old_books.webp"/>
+                    <div class="2xl:w-[282px] xl:w-[213.5px] py-[26px] px-[29.2px] bg-[#fff] rounded-b-lg">
                       <h1 class="mb-[6.5px] text-xl font-semibold">What to do with old books?</h1>
                       <p class="mb-[1rem] text-[#7e7d7d] font-semibold">Now the question is what should a person do after reading new books?
                         The answer is, resell used books to some another book lover just like you. By selling used books, you are trying to keep the book's motto alive and are helping to spread books knowledge ahead. If you like to do so, then you will definitely feel that how will I find the buyer for my book who will be ready to buy second hand books 
@@ -457,8 +364,8 @@
                  <!-- third-box -->
                  <div class="px-[9.5px] pb-8">
                   <div class="mr-[19.5px]">
-                    <img class="rounded-t-lg" width="282" height="282" src="https://www.clankart.com/user-uploads/blog/What_is_Clankart.webp"/>
-                    <div class="w-[282px] py-[26px] px-[29.2px] bg-[#fff] rounded-b-lg">
+                    <img class="rounded-t-lg xl:w-[213.5px] xl:h-[213.5px] 2xl:w-[282px] 2xl:h-[282px]" src="https://www.clankart.com/user-uploads/blog/What_is_Clankart.webp"/>
+                    <div class="2xl:w-[282px] xl:w-[213.5px] py-[26px] px-[29.2px] bg-[#fff] rounded-b-lg">
                       <h1 class="mb-[6.5px] text-xl font-semibold">What is Clankart?</h1>
                       <p class="mb-[1rem] text-[#7e7d7d] font-semibold">Clankart is a platform on which anyone 
                         can sell used books for money. All this can be done by simply posting a FREE ad on Clankart. So if you got some used books to sell, simply post the ad describing the details of your old book
@@ -469,34 +376,34 @@
               </div>
             </div>
           </div>
-          <!-- page-10 -->
+           <!-- page-10 -->
            <div class="py-[3rem] text-[#555]">
             <div class="px-[15px]">
-            <h1 class="text-4xl pt-5 font-bold font-serif text-center mb-[1rem]">Clankart Featured On</h1>
-            <ul class="mb-[1rem] flex justify-evenly">
-              <li class="px-[9.2px]  font-semibold text-3xl">
+            <h1 class="sm:text-2xl xl:text-4xl pt-5 font-bold font-serif text-center mb-[1rem]">Clankart Featured On</h1>
+            <ul class="mb-[1rem] flex sm:items-center justify-evenly sm:flex-col xl:flex-row">
+              <li class="px-[9.2px]  font-semibold  xl:text-2xl 2xl:text-3xl">
                 <div class="pt-[20px] mb-[13px]">NextBigWhat</div>
               </li>
-              <li class="px-[9.2px] font-semibold text-3xl">
+              <li class="px-[9.2px] font-semibold  xl:text-2xl 2xl:text-3xl">
                 <div class="pt-[20px] mb-[13px]">LaunchingNext</div>
               </li>
-              <li class="px-[9.2px] font-semibold text-3xl">
+              <li class="px-[9.2px] font-semibold  xl:text-2xl 2xl:text-3xl">
                 <div class="pt-[20px] mb-[13px]">Starter Story</div>
               </li>
-              <li class="px-[9.2px] font-semibold text-3xl">
+              <li class="px-[9.2px] font-semibold  xl:text-2xl 2xl:text-3xl">
                 <div class="pt-[20px] mb-[13px]">StartUpFreak</div>
               </li>
             </ul>
           </div>
            </div>
            <!-- page-11  -->
-            <div class="px-[15px] text-[#555] bg-[#deeafe]">
+           <div class="px-[15px] text-[#555] bg-[#deeafe]">
               <div class="">
                <h1 class="pt-5 mb-[13px] text-center text-4xl font-bold font-serif">Our Community</h1> 
                <div class="px-4">
              <div class="mb-[42.2px]">
                <p class="pt-5 mb-[13px] font-semibold text-lg">We're not just another shopping website where you buy from professional sellers
-              <span>- we are a vibrant community of students, book lovers across India</span> who deliver happiness to each other!
+              <span class="bg-linear-to-r from-[#ce1212] to-[#6218ff] text-transparent bg-clip-text">- we are a vibrant community of students, book lovers across India</span> who deliver happiness to each other!
             </p>
           </div>
           <!-- page-11-image -->
@@ -506,8 +413,8 @@
           </div>
               </div>
             </div>
-            <!-- page-12 -->
-             <div class="pt-[32.5px] px-[15px] flex justify-between h-[340px]">
+             <!-- page-12 -->
+             <div class="pt-[32.5px] px-[15px] flex justify-between sm:flex-col xl:flex-row sm:h-[630px] xl:h-[340px]">
               <!-- first -->
               <div class="pb-[6.5px] w-[291.5px] h-[208.9px] px-[9.7px]">
                 <h1 class="text-xl font-semibold text-neutral-400 pb-[13px]">ABOUT US</h1>
@@ -520,7 +427,7 @@
                
               </div>
                <!-- second -->
-               <div class="pb-[6.5px] w-[291.5px] h-[208.9px] px-[9.7px]">
+               <div class="pb-[6.5px] w-[291.5px] sm:h-[310px] xl:h-[208.9px] px-[9.7px]">
                 <h1 class="text-xl font-semibold text-neutral-400 pb-[13px]">USEFUL LINKS</h1>
                   <ul class=" mb-[3rem] text-[#555] font-semibold text-lg ">
                   <li class=" pb-[10.2px]">How it works?</li>
@@ -533,7 +440,7 @@
                
               </div>
               <!-- third -->
-              <div class="pb-[6.5px] w-[291.5px] h-[208.9px] px-[9.7px] ">
+              <div class="pb-[6.5px] w-[291.5px]  h-[208.9px] px-[9.7px] ">
                 <h1 class="text-xl font-semibold text-neutral-400 pb-[13px]">STAY CONNECTED</h1>
                   <ul class=" mb-[3rem] text-[#555] font-semibold text-lg ">
                   <li class=" pb-[13.2px] mb-[6.5px] text-4xl flex flex-row space-x-6">
@@ -548,12 +455,12 @@
               </div>
              </div>
              <!-- page-13 -->
-              <div class="pt-[16.5px]">
+             <div class="pt-[16.5px]">
                 <div class="px-[15px]">
                   <!-- social links -->
-                  <div class="flex justify-between pb-4 border-b border-neutral-300">
+                  <div class="flex justify-between sm:flex-col xl:flex-row pb-4 border-b border-neutral-300">
                     <!-- first -->
-                    <div class="px-[9.6px] mb-[19.5px] text-neutral-600 w-[250px] h-[140px]">
+                    <div class="px-[9.6px] mb-[19.5px] text-neutral-600 w-[250px] sm:h-[90px] xl:h-[140px]">
                       <div class="flex">
                         <i class="text-2xl fa-solid fa-credit-card"></i>
                         <div class="pl-[9.7px]">
@@ -573,7 +480,7 @@
                       </div>
                     </div>
                     <!-- third-->
-                    <div class="px-[9.6px] mb-[19.5px] text-neutral-600 w-[250px] h-[140px]">
+                    <div class="px-[9.6px] mb-[19.5px] text-neutral-600 w-[250px] sm:[90px] xl:h-[140px]">
                       <div class="flex">
                         <i class="text-2xl fa-solid fa-rocketchat"></i>
                         <div class="pl-[9.7px]">
@@ -591,7 +498,7 @@
                       llege books, school books, reading books, much more near you.</p>
                   </div>
                   <!--  -->
-                  <div class="py-4 flex justify-between items-center">
+                  <div class="py-4 flex justify-between items-center sm:flex-col xl:flex-row">
                     <p>Copyright © 2025, <span class="font-semibold">Clankart™ </span>All Rights Reserved</p>
                     <ul class="flex">
                       <li  class="mr-[9.7px]"><svg class="icon icon--full-color" viewBox="0 0 38 24" xmlns="http://www.w3.org/2000/svg" role="img" width="38" height="24" aria-labelledby="pi-visa">
@@ -636,12 +543,35 @@
                   </div>
                 </div>
               </div>
- </div>
+</div>
 </template>
+<script setup>
+import {ref,onMounted} from "vue";
+// import axios from "axios";
+const books = ref([]);
+console.log("dj")
+const fetchBookData = async () =>{
+
+  try{
+ 
+    const response = await fetch("https://www.dbooks.org/api/recent", {
+      method: "GET",
+    credentials: "omit", // Prevents sending cookies
+    });
+    const data =await response.json();
+    books.value = data.books
+    console.log(books.value)
+  }
+  catch(error){
+console.error("error fetched:",error);
+  }
+}
+onMounted(fetchBookData);
+</script>
 <style scoped>
 @keyframes scroll {
   0%{transform: translateX(0%);}
-  100%{transform: translatex(-50%);}
+  100%{transform: translatex(-50%);} 
 }
 .animate-scroll:hover{
   animation-play-state: paused;
@@ -653,11 +583,13 @@ animation: scroll 15s linear infinite;
 }
 
 .two-bg{
-  height: 239.8px;
+
   background-color: #FFF2C7;
 background-image: url('https://www.clankart.com/static-assets/rightrangoli.png'),url('https://www.clankart.com/static-assets/leftrangoli.png');
 background-position: left top, right bottom;
     background-size: contain, contain;
     background-repeat: no-repeat, no-repeat;
 }
+
+
 </style>
