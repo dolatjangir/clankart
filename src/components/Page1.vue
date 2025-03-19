@@ -1,4 +1,42 @@
 <template>
+    <!-- Home.vue ki page-1 -->
+<div class="header xl:h-[110px] sm:h-[60px] fixed bg-white z-20 w-screen  px-4 flex ">
+    <div class="inner-header 2xl:mx-[19.5px] pl-2 w-screen flex flex-row items-center justify-between">
+        
+      <div class="clankart-img flex items-center justify-between xl:ml-[6.5px] 2xl:h-[55px] 2xl:w-[150px]  sm:h-[40px] xl:w-[120px] xl:h-[48px] xl:pl-2 2xl:mr-[32.5px] sm:mr-4">
+       <!-- hamburger -->
+       <div class="sm:flex xl:hidden sm:pl-[6px]">
+            <i class="text-xl fa-solid fa-bars"></i>
+        </div>
+        <a href="/" class="py-[5.7px] pl-4 ">
+          <img class="2xl:w-[150px] 2xl:h-[55px] sm:w-[120px] sm:h-[48px] " width="150" height="55" src="https://www.clankart.com/user-uploads/static-assets/logo.png"/>
+        </a>
+      </div>
+      <div class="header-secondory-things mb-4 flex flex-row sm:hidden xl:flex">
+      <div class="header-search-bar mr-[16.2px] h-[47px] flex">
+        <div class="border border-[#0083ca] flex flex-row w-[358px]">
+        <input class="px-[13px] py-[9.7px] w-full" placeholder="Book Name/Author/Subject/Publiser"/></div>
+        <button class="bg-[#0083ca] px-[20.5px] py-[10.7px] text-white text-lg">Search</button>
+       
+    </div>
+     <div class=" yellow-button ">
+        <button class="px-[9.7px] py-[10.7px] sm:hidden 2xl:flex border border-[#e1b70d] bg-[#fcec52] h-[47px] w-[150px] rounded-sm ">Sell Used Books</button>
+        <button class="px-[9.7px] py-[10.7px] border sm:flex 2xl:hidden border-[#e1b70d] bg-[#fcec52] h-[47px] w-[100px] justify-center items-center text-2xl rounded-sm ">+SELL</button>
+    </div>
+      </div>
+    
+      <div class="account-and-cart-button text-sm flex sm:hidden 2xl:flex text-[#5b5b5b]">
+        <button class="mr-[16.2px] text-center"><i class="text-lg fa-solid fa-user"></i><br/><span class="">Account</span></button>
+        <button class="flex flex-col text-sm"><i class="text-lg fa-solid fa-cart-shopping"></i><span>Cart</span></button>
+      </div>
+      <!-- sm icons -->
+      <div class="account-and-cart-button text-sm flex  sm:flex xl:hidden text-[#5b5b5b] pr-4">
+        <button class="mr-[16.2px] text-center"><i class="text-lg fa-solid fa-search"></i><br/></button>
+        <button class="text-sm"><i class="text-lg fa-solid fa-cart-shopping"></i></button>
+      </div>
+    </div>
+  </div>
+  <!-- part-1 -->
     <div class="px-4">
   <div class="flex flex-col items-center py-10">
     <span class="text-gray-500 text-sm mb-2">Sponsored Content</span>
