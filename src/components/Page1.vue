@@ -36,8 +36,9 @@
       </div>
     </div>
   </div>
-  <!-- part-1 -->
+  
     <div class="px-4">
+      <!-- part-1 -->
   <div class="flex flex-col items-center py-10">
     <span class="text-gray-500 text-sm mb-2">Sponsored Content</span>
     <div class="w-[970px] h-[175px] bg-gray-200 flex items-center justify-center border border-gray-400">
