@@ -144,7 +144,7 @@
     </div>
   </section>
   <!-- section-3 -->
-       <!-- page-12 aboutus page -->
+       <!-- aboutus page -->
  <div class="pt-[32.5px] px-[15px] flex justify-between sm:flex-col xl:flex-row sm:h-[630px] xl:h-[259px]">
               <!-- first -->
               <div class="pb-[6.5px] w-[291.5px] h-[208.9px] px-[9.7px]">
@@ -185,7 +185,7 @@
                
               </div>
              </div>
- <!-- page-13 aboutus page -->
+ 
  <div class="pt-[16.5px]">
                 <div class="px-[15px]">
                   <!-- social links -->
