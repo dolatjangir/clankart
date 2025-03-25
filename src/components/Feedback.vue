@@ -72,7 +72,7 @@
         <thead>
           <tr class="border border-gray-200">
             <th class="p-3 font-semibold text-gray-700"></th>
-            <th
+             <th
               v-for="(option, index) in options"
               :key="index"
               class=" p-1 border border-gray-200 font-normal text-gray-700"
@@ -122,13 +122,18 @@
     </div>
   </div>
   <!-- 6 -->
-   <div class="container ">
+   <div  class="container " >
     <!-- 1 -->
-  <div class="p-2 mb-3 w-fit rounded-lg border border-neutral-300">
+  <div  v-for="(button,index) in buttons" :key="index"  @click = "selected = index"
+  class="p-2 mb-3 w-fit rounded-lg  border "
+    :class="{'border border-blue-500 shadow-xl' : selected === index, 'border border-neutral-300' : selected !== index}">
     <div class="flex items-center space-x-3">
       <div class="flex items-center">
-        <div class="w-5 h-5 flex items-center justify-center bg-neutral-500 text-white font-bold rounded-sm">
-          A
+        <div class="w-5 h-5 flex items-center justify-center hover:bg-blue-600 text-white font-bold rounded-sm"
+        :class="{'bg-blue-500 text-white' : selected === index , 'bg-neutral-500 text-white' : selected !== index}"
+       
+        >
+        {{ button.serial }}
         </div>
         <input
           id="choice"
@@ -138,14 +143,14 @@
           aria-describedby="legend"
           class="ml-3 form-radio h-4 w-4 hidden text-blue-600"
         />
-        <label for="choice" class="ml-2 font-semibold text-gray-700">
-          Google (Search Results)
+        <label  for="choice" class="ml-2 font-semibold text-gray-700">
+          {{ button.butt }}
         </label>
       </div>
     </div>
   </div>
     <!-- 2 -->
-  <div class="p-2 mb-3 w-fit rounded-lg border border-neutral-300">
+  <!-- <div class="p-2 mb-3 w-fit rounded-lg border border-neutral-300">
     <div class="flex items-center space-x-3">
       <div class="flex items-center">
         <div class="w-5 h-5 flex items-center justify-center bg-neutral-500 text-white font-bold rounded-sm">
@@ -164,9 +169,9 @@
         </label>
       </div>
     </div>
-  </div>
+  </div> -->
     <!-- 3 -->
-    <div class="p-2 mb-3 w-fit rounded-lg border border-neutral-300">
+    <!-- <div class="p-2 mb-3 w-fit rounded-lg border border-neutral-300">
     <div class="flex items-center space-x-3">
       <div class="flex items-center">
         <div class="w-5 h-5 flex items-center justify-center bg-neutral-500 text-white font-bold rounded-sm">
@@ -185,7 +190,7 @@
         </label>
       </div>
     </div>
-  </div>
+  </div> -->
 </div>
  <!-- 7 -->
  <div class="py-4">
@@ -206,11 +211,16 @@
    <!-- 8 -->
    <div class="container ">
     <!-- 1 -->
-  <div class="p-2 mb-3 w-fit rounded-lg border border-neutral-300">
+  <div v-for="(button2 , index) in buttons2" :key="index" @click="selectedbutton = index" 
+  class="p-2 mb-3 w-fit rounded-lg border "
+  :class="{'border border-blue-500 shadow-xl' : selectedbutton === index  , 'border border-neutral-300' : selectedbutton !== index}"
+  >
     <div class="flex items-center space-x-3">
       <div class="flex items-center">
-        <div class="w-5 h-5 flex items-center justify-center bg-neutral-500 text-white font-bold rounded-sm">
-          A
+        <div class="w-5 h-5 flex items-center justify-center  text-white font-bold rounded-sm"
+        :class="{'bg-blue-500 text-white' : selectedbutton === index, 'bg-neutral-500' : selectedbutton !== index}"
+        >
+         {{ button2.serialNo }}
         </div>
         <input
           id="choice"
@@ -221,13 +231,13 @@
           class="ml-3 form-radio h-4 w-4 hidden text-blue-600"
         />
         <label for="choice" class="ml-2 font-semibold text-gray-700">
-         Buyer
+         {{ button2.buttName }}
         </label>
       </div>
     </div>
   </div>
     <!-- 2 -->
-  <div class="p-2 mb-3 w-fit rounded-lg border border-neutral-300">
+  <!-- <div class="p-2 mb-3 w-fit rounded-lg border border-neutral-300">
     <div class="flex items-center space-x-3">
       <div class="flex items-center">
         <div class="w-5 h-5 flex items-center justify-center bg-neutral-500 text-white font-bold rounded-sm">
@@ -246,9 +256,9 @@
         </label>
       </div>
     </div>
-  </div>
+  </div> -->
     <!-- 3 -->
-    <div class="p-2 mb-3 w-fit rounded-lg border border-neutral-300">
+    <!-- <div class="p-2 mb-3 w-fit rounded-lg border border-neutral-300">
     <div class="flex items-center space-x-3">
       <div class="flex items-center">
         <div class="w-5 h-5 flex items-center justify-center bg-neutral-500 text-white font-bold rounded-sm">
@@ -267,7 +277,7 @@
         </label>
       </div>
     </div>
-  </div>
+  </div> -->
 </div>
 
   <!-- 9 -->
@@ -281,6 +291,7 @@
         <div
           v-for="star in 5"
           :key="star"
+          @click = "starRating = star"
           class="flex items-center space-x-2"
         >
           <svg
@@ -293,13 +304,14 @@
             stroke-width="2"
             stroke-linecap="round"
             stroke-linejoin="round"
+            :class="{'text-yellow-400' :star <=starRating }"
             class="h-8 w-8 text-gray-400 hover:text-yellow-400 cursor-pointer"
           >
             <path
               d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"
             />
           </svg>
-         
+        
          
         </div>
       </div>
@@ -363,7 +375,7 @@
       </div>
     </div>
   </div>
- <!--  -->
+ <!-- Custom file upload button  -->
 <div class="bg-white border border-dashed border-neutral-400 shadow-md rounded-lg p-6 mb-4">
     <div class="flex flex-col items-center">
       <!-- Hidden file input -->
@@ -410,7 +422,7 @@
       aria-label="Submit"
       class="flex items-center justify-center mt-4 bg-black font-semibold text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors duration-200"
     >
-      <span class="mr-2">Submit</span>
+      <span class="mr-2" @click="submitButton()">Submit</span>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="16"
@@ -590,7 +602,21 @@
 </template>
 
 <script setup>
-import { ref } from 'vue';
+import { reactive, ref } from 'vue';
+const starRating = ref();
+const selected = ref('');
+const error = ref([])
+const selectedbutton = ref('');
+const buttons = reactive([
+{serial:"A",butt:"Google (Search Results)"},
+{serial:"B",butt:"Social Media"},
+{serial:"C",butt:"Friends"}
+]);
+const buttons2 = reactive([
+{serialNo:"A",buttName:"Buyer"},
+{serialNo:"B",buttName:"Seller"},
+{serialNo:"C",buttName:"User"}
+]);
  const rows = ref([
  { label: "Website User Experience" },
         { label: "Website Visual Design" },
@@ -599,4 +625,11 @@ import { ref } from 'vue';
  ]);
 
  const options = ref(["Worst", "Bad", "Average", "Good", "Great"]);
+
+ const submitButton = ( ) =>{
+  if (starRating = 0){
+    error = " please select a value"
+    console.log(error.value)
+  }
+ }
 </script>
