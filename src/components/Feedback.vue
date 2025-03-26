@@ -284,7 +284,7 @@
   <div class="py-4">
     <fieldset role="group">
       <legend class="text-2xl font-semibold text-gray-800 mb-4 flex flex-row gap-2">
-        How would you rate us overall?<span class="font-bold">*</span>
+        How would you rate us overall?<span class="font-bold">* </span>
       </legend>
       
       <div class="flex items-center space-x-3">
@@ -311,12 +311,18 @@
               d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"
             />
           </svg>
-        
+       
          
         </div>
+        
       </div>
+      
     </fieldset>
+    <p v-if="error" class="text-red-500 mt-2">
+      {{ error }}
+    </p>
   </div>
+ 
   <!-- 10 -->
    <div class="section">
   <div class="pt-6 mb-4">
@@ -418,11 +424,12 @@
   <div class="flex flex-row items-center justify-between space-y-4 pt-8 mb-6">
     <!-- Submit Button -->
     <button
+    @click="submitButton"
       type="submit"
       aria-label="Submit"
       class="flex items-center justify-center mt-4 bg-black font-semibold text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors duration-200"
     >
-      <span class="mr-2" @click="submitButton()">Submit</span>
+      <span class="mr-2" >Submit</span>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="16"
@@ -603,9 +610,9 @@
 
 <script setup>
 import { reactive, ref } from 'vue';
-const starRating = ref();
+const starRating = ref(0);
 const selected = ref('');
-const error = ref([])
+const error = ref();
 const selectedbutton = ref('');
 const buttons = reactive([
 {serial:"A",butt:"Google (Search Results)"},
@@ -627,9 +634,13 @@ const buttons2 = reactive([
  const options = ref(["Worst", "Bad", "Average", "Good", "Great"]);
 
  const submitButton = ( ) =>{
-  if (starRating = 0){
-    error = " please select a value"
+  if (starRating.value === 0){
+    error.value = " please select a value"
     console.log(error.value)
+  }else{
+    console.log(starRating.value, "is rating of stars");
+    error.value='';
   }
+  
  }
 </script>
