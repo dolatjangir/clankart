@@ -4,12 +4,14 @@
 // import Page1 from './components/Page1.vue'
 // import About_us from './components/About_us.vue';
 // import Contact_us from './components/Contact_us.vue';
-import Feedback from './components/Feedback.vue';
+import Blog from './components/Blog.vue';
+// import Feedback from './components/Feedback.vue';
 // import Page2 from './components/Page2.vue'
 </script>
 
 <template>
-  <Feedback/>
+   <Blog/>
+  <!-- <Feedback/> -->
   <!-- <Contact_us/> -->
   <!-- <About_us/> -->
    <!-- <Page2/> -->
