@@ -1,4 +1,133 @@
 <template>
+  <!-- header -->
+  <nav class="bg-white shadow">
+    <div class="container mx-auto px-4">
+      <div class="flex justify-between items-center py-4">
+        <!-- Logo -->
+        <div class="flex-1">
+          <a href="https://www.clankart.com/blog/" title="Clankart Speaks">
+            <img
+              src="https://www.clankart.com/blog/wp-content/uploads/2022/10/logo.png"
+              alt="Clankart"
+              class="h-10"
+            />
+          </a>
+        </div>
+        <!-- Navigation Links -->
+        <transition
+      enter-active-class="transition-all duration-500 ease-in-out transform scale-95 opacity-0"
+      enter-to-class="scale-100 opacity-100"
+      leave-active-class="transition-all duration-500 ease-in-out  transform scale-95 opacity-0"
+    >
+        <input
+              type="search"
+              name="s"
+              v-if="divShow"
+              placeholder="Search..."
+              class="border-b border-red-500  rounded-l px-4 py-2  focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
+        
+        <div v-else class="hidden md:flex space-x-4" >
+          <a
+            href="https://www.clankart.com/"
+            class="text-gray-700 hover:text-gray-900"
+            >Visit Main Website</a
+          >
+          <a
+            href="https://www.clankart.com/books"
+            class="text-gray-700 hover:text-gray-900"
+            >Buy Used Books</a
+          >
+          <a
+            href="https://www.clankart.com/post-ad"
+            class="text-gray-700 hover:text-gray-900"
+            >Sell Used Books for Cash</a
+          >
+        </div> </transition>
+        <!-- Search Form -->
+        <div class="hidden md:block">
+          <form
+            role="search"
+            method="get"
+            action="https://www.clankart.com/blog/"
+            class="flex items-center"
+          >
+          
+          
+            <div @click="divShow = !divShow" class="px-4"><i class="fa-solid fa-magnifying-glass"></i></div>
+            <!-- <button
+              type="submit"
+              class="bg-blue-500 text-white px-4 py-2 rounded-r hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500"
+            >
+              Search
+            </button> -->
+          </form>
+        </div>
+        <!-- Mobile Menu Button -->
+        <div class="md:hidden">
+          <button
+            @click="toggleMenu"
+            class="text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
+          >
+            <svg
+              class="h-6 w-6"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <!-- Mobile Menu -->
+      <div v-if="isMenuOpen" class="md:hidden">
+        <a
+          href="https://www.clankart.com/"
+          class="block text-gray-700 hover:text-gray-900 py-2 px-4"
+          >Visit Main Website</a
+        >
+        <a
+          href="https://www.clankart.com/books"
+          class="block text-gray-700 hover:text-gray-900 py-2 px-4"
+          >Buy Used Books</a
+        >
+        <a
+          href="https://www.clankart.com/post-ad"
+          class="block text-gray-700 hover:text-gray-900 py-2 px-4"
+          >Sell Used Books for Cash</a
+        >
+        <div class="py-2 px-4">
+          <form
+            role="search"
+            method="get"
+            action="https://www.clankart.com/blog/"
+            class="flex items-center"
+          >
+            <!-- <input
+              type="search"
+              name="s"
+              placeholder="Search..."
+              class="border border-gray-300 rounded-l px-4 py-2 w-full focus:outline-none focus:ring-2 focus:ring-blue-500"
+            /> -->
+            <!-- <button
+              type="submit"
+              class="bg-blue-500 text-white px-4 py-2 rounded-r hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500"
+            >
+              Search
+            </button> -->
+          </form>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- first section -->
     <div class="h-[438px] bg-no-repeat bg-cover   bg-[url('https://www.clankart.com/blog/wp-content/uploads/2022/10/cropped-big-image-studentsm.jpeg')]">
 <div class=" text-center text-4xl font-bold backdrop-contrast-50 text-white py-[180px] px-44">
     Buy & Sell Old Books, Second hand books online in India
@@ -66,7 +195,7 @@
   </footer>
 </template>
 <script setup>
-import { reactive } from 'vue';
+import { reactive, ref } from 'vue';
 const articaleInfo = reactive([
    {heading:"Why reselling used books is better than selling them to a scrap dealer?" , 
    paragraph:"Books are often an integral part of our lives because they provide us with education, amusement, and inspiration. But as time goes on, we often find ourselves accumulating a vast collection of old books that we no longer need or use. So at some time, we tempt to dispose of these books by just selling them to a scrap dealer. But in this blog post, I will tell you many compelling reasons why one should",
@@ -96,4 +225,9 @@ const articaleInfo = reactive([
         ,textColor:"text-[#e91e63]"
     }
 ]);
+const divShow = ref(false)
+
 </script>
+<style scoped>
+
+</style>
