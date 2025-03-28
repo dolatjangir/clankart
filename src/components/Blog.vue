@@ -90,17 +90,17 @@
       <div v-if="isMenuOpen" class="md:hidden">
         <a
           href="https://www.clankart.com/"
-          class="block text-gray-700 hover:text-gray-900 py-2 px-4"
+          class="block text-gray-700 hover:text-red-500 py-2 px-4"
           >Visit Main Website</a
         >
         <a
           href="https://www.clankart.com/books"
-          class="block text-gray-700 hover:text-gray-900 py-2 px-4"
+          class="block text-gray-700 hover:text-red-500 py-2 px-4"
           >Buy Used Books</a
         >
         <a
           href="https://www.clankart.com/post-ad"
-          class="block text-gray-700 hover:text-gray-900 py-2 px-4"
+          class="block text-gray-700 hover:text-red-500 py-2 px-4"
           >Sell Used Books for Cash</a
         >
         <div class="py-2 px-4">
