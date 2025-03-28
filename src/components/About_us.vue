@@ -200,7 +200,7 @@
                
               </div>
              </div>
- <!-- page-13 -->
+ <!-- page-13 aboutus page -->
  <div class="pt-[16.5px]">
                 <div class="px-[15px]">
                   <!-- social links -->
