@@ -219,7 +219,7 @@
 
     <p class="mt-5">
       Last, simply click on the
-      <a href="/post-ad" target="_blank" class="btn btn-sm bg-yellow-400  px-3 py-1 rounded">Post Ad</a>
+      <a href="https://www.clankart.com/post-ad" target="_blank" class="btn btn-sm bg-yellow-400  px-3 py-1 rounded">Post Ad</a>
       button. After clicking the button, the book ad will go live on Clankart. From there, interested buyers can view the book details, contact you with 'Chat button' for any questions, and make an offer to purchase the book if they are interested.
 
 
