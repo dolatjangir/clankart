@@ -5,7 +5,8 @@
 // import About_us from './components/About_us.vue';
 // import Contact_us from './components/Contact_us.vue';
 
-import Clankart_teleport_child1 from './components/clankart_teleport_child1.vue';
+import Chat_guide from './components/Chat_guide.vue';
+// import Clankart_teleport_child1 from './components/clankart_teleport_child1.vue';
 
 // import Clankart_teleport from './components/Clankart._teleport.vue';
 
@@ -16,7 +17,8 @@ import Clankart_teleport_child1 from './components/clankart_teleport_child1.vue'
 </script>
 
 <template>
-   <Clankart_teleport_child1/>
+   <Chat_guide/>
+   <!-- <Clankart_teleport_child1/> -->
   <!-- <Clankart_teleport/> -->
   <!-- <How_it_works_page/> -->
    <!-- <Blog/> -->
