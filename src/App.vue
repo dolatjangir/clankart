@@ -5,8 +5,11 @@
 // import About_us from './components/About_us.vue';
 // import Contact_us from './components/Contact_us.vue';
 
+// import Listing_policy from './components/Listing_policy.vue';
+import Privacy_policy from './components/Privacy_policy.vue';
+
 // import Chat_guide from './components/Chat_guide.vue';
-import Terms_of_use from './components/Terms_of_use.vue';
+// import Terms_of_use from './components/Terms_of_use.vue';
 // import Clankart_teleport_child1 from './components/clankart_teleport_child1.vue';
 
 // import Clankart_teleport from './components/Clankart._teleport.vue';
@@ -18,7 +21,9 @@ import Terms_of_use from './components/Terms_of_use.vue';
 </script>
 
 <template>
-  <Terms_of_use/>
+  <Privacy_policy/>
+  <!-- <Listing_policy/> -->
+  <!-- <Terms_of_use/> -->
    <!-- <Chat_guide/> -->
    <!-- <Clankart_teleport_child1/> -->
   <!-- <Clankart_teleport/> -->
