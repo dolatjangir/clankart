@@ -1,6 +1,6 @@
 <template>
-   <!-- Home.vue ki page-1 -->
-<div class="header xl:h-[110px] sm:h-[60px] fixed z-20 bg-white w-screen  px-4 flex ">
+  <!-- common header  -->
+   <div class="header xl:h-[110px] sm:h-[60px] fixed z-20 bg-white w-screen  px-4 flex ">
     <div class="inner-header 2xl:mx-[19.5px] pl-2 w-screen flex flex-row items-center justify-between">
         
       <div class="clankart-img flex items-center justify-between xl:ml-[6.5px] 2xl:h-[55px] 2xl:w-[150px]  sm:h-[40px] xl:w-[120px] xl:h-[48px] xl:pl-2 2xl:mr-[32.5px] sm:mr-4">
@@ -36,212 +36,221 @@
       </div>
     </div>
   </div>
-  <!-- part-1 -->
-    <section class="pb-10 px-16 pt-[140px] bg-[#f7f8fa]">
-    <div class="container mx-auto">
-      <nav>
-        <!-- begin::breadcrumbs -->
-        <ol class="flex text-gray-600 text-sm font-semibold pb-3">
-          <li class="px-3">
-            <a href="/" class="pe-3 text-blue-600 hover:underline">Home</a>
-          </li>
-          <li class="px-3">
-            <a href="/books" class="pe-3 text-blue-600 hover:underline">Books</a>
-          </li>
-          <li class="px-3 text-gray-500">Used Books</li>
-        </ol>
-        <!-- end::breadcrumbs -->
-      </nav>
-      <h1 class="text-2xl font-semibold text-gray-800">
-        Find from over 1000s of used books online
-      </h1>
+  <!-- section-1 -->
+      <section class="py-10  pt-[160px] bg-gray-100 bg-no-repeat bg-cover bg-right-top bg-[url('https://www.clankart.com/static-assets/static-bg.png')]">
+    <div class="container  px-[30px]   md:px-12 lg:px-20">
+      <div class="flex flex-col justify-between md:flex-row py-12 items-start">
+        <!-- Banner Text Content -->
+        <div class="md:w-1/2 text-center flex-1 md:text-left">
+          <h1 class="text-3xl md:text-4xl font-bold fancy-font">
+            How to Sell Old Books Online in India?
+          </h1>
+          <p class="py-5 text-xl font-semibold text-gray-600">
+            No matter if you are a student or a reader, sell your old books online throughout India on Clankart and earn some extra money in your account.
+          </p>
+        </div>
+
+        <!-- Banner Image -->
+        <div class="md:w-1/2 flex h-[239px] justify-center ">
+          <img class="max-w-full h-[239px] md:h-auto" alt="Online Bookstore" src="https://www.clankart.com/static-assets/online-bookstore.png">
+        </div>
+      </div>
+    </div>
+  </section> 
+  <!-- section-2 -->
+  <section class="bg-[#f1faff] ">
+    <!-- Curved SVG Top -->
+    <div class="relative">
+      <svg viewBox="15 12 1470 48" fill="none" xmlns="http://www.w3.org/2000/svg" class="mb-7 w-full">
+        <path d="M0 11C3.93573 11.3356 7.85984 11.6689 11.7725 12H1488.16C1492.1 11.6689 1496.04 11.3356 1500 11V12H1488.16C913.668 60.3476 586.282 60.6117 11.7725 12H0V11Z" fill="white"></path>
+      </svg>
+    </div>
+
+    <div class="container mx-auto px-6 md:px-12 lg:px-10 pb-7">
+      <h2 class="text-center text-3xl md:text-4xl font-bold fancy-font py-10">
+        How to sell used books online in 
+        <span class="relative inline-block px-1 text-blue-500">
+          simple steps
+          <img class="absolute bottom-0 w-full" src="https://keenthemes.com/metronic/assets/media/misc/hero-home-title-underline.svg" alt="">
+        </span>
+      </h2>
+
+      <!-- Steps Container -->
+      <div class="bg-white shadow-lg rounded-lg px-8 py-20">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div v-for="(step, index) in steps" :key="index" class="text-center  rounded-lg px-6  pt-6 pb-12  shadow-sm bg-[#cbf0f4]">
+            <div class="text-white bg-blue-600 relative bottom-7 left-28 w-[50px] h-11 rounded-b-md py-3   text-sm ">Step {{ index + 1 }}</div>
+            <img :src="step.image" alt="" class="w-12 h-12 mx-auto mb-4">
+            <h3 class="font-semibold text-lg">{{ step.title }}</h3>
+            <p class="text-gray-600 text-sm ">
+              <span v-html="step.description"></span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Curved SVG Bottom -->
+    <div class="relative">
+      <svg class=" mt-7 w-full" viewBox="15 -1 1470 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M1 48C4.93573 47.6644 8.85984 47.3311 12.7725 47H1489.16C1493.1 47.3311 1497.04 47.6644 1501 48V47H1489.16C914.668 -1.34764 587.282 -1.61174 12.7725 47H1V48Z" fill="white"></path>
+      </svg>
     </div>
   </section>
-  <!--  -->
-   <!-- <div class="py-8 px-[30px]"></div> -->
-   <!-- part-2 -->
-    <div class="flex my-12">
-   <div class="card-body mx-5 border h-fit border-neutral-300 rounded-lg p-7">
-    <div class="overflow-y-auto" style="height: fit-content;">
-      <!-- Book Condition Filter -->
-      <div class="border-b pb-4">
-        <article class="border-0">
-          <!-- Header -->
-          <div class="accordion-header flex justify-between items-center cursor-pointer" @click="toggleAccordion('condition')">
-            <h3 class="text-primary font-semibold">Book Condition</h3>
-            <span class="transform transition-transform" :class="{ 'rotate-180': isConditionOpen }">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-              </svg>
-            </span>
-          </div>
-          <!-- Body -->
-          <div v-if="isConditionOpen" class="mt-2">
-            <form class="space-y-2">
-              <div class="flex items-center">
-                <input type="checkbox"  id="excellent" class="form-checkbox h-4 w-4 text-primary">
-                <label for="excellent" class="ml-2 text-sm">Excellent</label>
-              </div>
-              <div class="flex items-center">
-                <input type="checkbox" id="good" class="form-checkbox h-4 w-4 text-primary">
-                <label for="good" class="ml-2 text-sm">Good</label>
-              </div>
-              <div class="flex items-center">
-                <input type="checkbox" id="fair" class="form-checkbox h-4 w-4 text-primary">
-                <label for="fair" class="ml-2 text-sm">Fair</label>
-              </div>
-            </form>
-          </div>
-        </article>
-      </div>
+  <!-- section-3 -->
+  <div class=" flex justify-center bg-[#fff] py-[3rem]">
+          <iframe class="sm:w-[300px] md:w-[345px] lg:w-[395px] sm:h-[315px] xl:w-[560px] xl:h-[315px] rounded-lg" src="https://www.youtube.com/embed/Rwj6vi55hHw">
 
-      <!-- Book Type Filter -->
-      <div class="accordion border-b pb-4 mt-4">
-        <article class="accordion-item border-0">
-          <!-- Header -->
-          <div class="accordion-header flex justify-between items-center cursor-pointer" @click="toggleAccordion('type')">
-            <h3 class="text-primary font-semibold">Book Type</h3>
-            <span class="transform transition-transform" :class="{ 'rotate-180': isTypeOpen }">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-              </svg>
-            </span>
-          </div>
-          <!-- Body -->
-          <div v-if="isTypeOpen" class="mt-2">
-            <form class="space-y-2">
-              <div class="flex items-center">
-                <input type="checkbox" id="college" class="form-checkbox h-4 w-4 text-primary">
-                <label for="college" class="ml-2 text-sm">College Books (Higher Education Textbooks)</label>
-              </div>
-              <div class="flex items-center">
-                <input type="checkbox" id="exam_prep" class="form-checkbox h-4 w-4 text-primary">
-                <label for="exam_prep" class="ml-2 text-sm">Exam/Test Preparation Books</label>
-              </div>
-              <div class="flex items-center">
-                <input type="checkbox" id="reading" class="form-checkbox h-4 w-4 text-primary">
-                <label for="reading" class="ml-2 text-sm">Reading Books (Novels, Children, Business, Literature, History, etc.)</label>
-              </div>
-              <div class="flex items-center">
-                <input type="checkbox" id="school" class="form-checkbox h-4 w-4 text-primary">
-                <label for="school" class="ml-2 text-sm">School Books (up to 12th)</label>
-              </div>
-            </form>
-          </div>
-        </article>
-      </div>
-
-      <!-- Book Category Filter -->
-      <div class="accordion border-b pb-4 mt-4">
-        <article class="accordion-item border-0">
-          <!-- Header -->
-          <div class="accordion-header flex justify-between items-center cursor-pointer" @click="toggleAccordion('category')">
-            <h3 class="text-primary font-semibold">Book Category</h3>
-            <span class="transform transition-transform" :class="{ 'rotate-180': isCategoryOpen }">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-              </svg>
-            </span>
-          </div>
-          <!-- Body -->
-          <div v-if="isCategoryOpen" class="mt-2">
-            <input type="text" class="w-full p-2 border rounded mb-4" placeholder="Search...">
-            <form class="space-y-2">
-              <div class="flex items-center">
-                <input type="checkbox" id="10th" class="form-checkbox h-4 w-4 text-primary">
-                <label for="10th" class="ml-2 text-sm">10th</label>
-              </div>
-              <div class="flex items-center">
-                <input type="checkbox" id="11th" class="form-checkbox h-4 w-4 text-primary">
-                <label for="11th" class="ml-2 text-sm">11th</label>
-              </div>
-              <div class="flex items-center">
-                <input type="checkbox" id="12th" class="form-checkbox h-4 w-4 text-primary">
-                <label for="12th" class="ml-2 text-sm">12th</label>
-              </div>
-              <!-- Add more categories as needed -->
-            </form>
-          </div>
-        </article>
-      </div>
-    </div>
-  </div>
-  <!--  -->
-  <div class="col-span-9 mx-7 adv-list-pane">
-    <!-- Header Section -->
-    <header class="pb-8">
-      <div class="flex flex-col md:flex-row justify-between items-center">
-        <div>
-          <h2 class="text-2xl font-bold">Buy Second Hand Books, Used Books Online In India</h2>
+          </iframe>
         </div>
-        <select class="form-select w-auto text-dark">
-          <option selected disabled>Sort</option>
-          <option value="1">Newest First</option>
-          <option value="2">Price - Low to High</option>
-          <option value="3">Price - High to Low</option>
-        </select>
-      </div>
-    </header>
+        <!-- section-4 -->
+         <div class="px-[30px] mx-10">
+          <h1 class=" text-center text-3xl font-bold py-[32.5px] mb-[6.5px]">Here's a step-by-step guide how to post ad on Clankart</h1>
+        <!-- details-section -->
+        <div class="details-section pb-20">
+    <h4 class="border-l-4 border-[#008bcf] pt-[6px] pr-[20px] pl-[12px] pb-[10px] rounded-xs bg-gradient-to-r from-[#e0f5ff] via-[#e0f5ff] to-white w-fit mb-6 text-2xl font-semibold text-gray-800">Sign Up for Free</h4>
 
-    <!-- Book List Section -->
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-      <!-- Book Card -->
-      <div v-for="book in Allbook" :key="book.id" class="adv-card">
-        <figure class="card overlay card-product-grid">
-          <div class="flex flex-col">
-            <!-- Image Container -->
-            <a :href="book.link" class="col-12 col-md-12">
-              <div class="flex flex-center img-wrap overlay-wrapper relative h-48 sm:h-56">
-                <img class="lazy w-full h-full object-cover" :src="book.image" :alt="book.title" />
-                <button class="btn-wishlist btn-sm text-hover-danger absolute top-2 right-2">
-                  <i class="bi bi-heart"></i>
-                </button>
-              </div>
-            </a>
-
-            <!-- Book Details -->
-            <div class="info-wrap p-4">
-              <a :href="book.link" class="title text-gray-800">
-                <div class="fix-height">
-                  <h3 class="text-xl font-semibold">{{ book.title }}</h3>
-                  <div class="price-wrap my-2 flex justify-between">
-                    <div>
-                      <span class="price text-lg font-bold">₹{{ book.price }}</span>
-                      <del v-if="book.oldPrice" class="price-old text-sm text-gray-500 ml-2">₹{{ book.oldPrice }}</del>
-                    </div>
-                    <div v-if="book.discount" class="badge bg-green-100 text-green-700 px-2 py-1 rounded">
-                      {{ book.discount }}% off
-                    </div>
-                  </div>
-                  <p v-if="book.description" class="text-sm text-gray-600 mt-2">{{ book.description }}</p>
-                </div>
-                <div class="flex flex-col lg:flex-row justify-between items-center mt-3">
-                  <span class="text-sm text-gray-500">{{ book.timeAgo }}</span>
-                </div>
-              </a>
-            </div>
-          </div>
-        </figure>
+    <div class="ml-5">
+      <p class="   ">
+        To start selling your books on Clankart, you need to first create an account on Clankart.
+        Creating the account is very simple. All you need is:
+      </p>
+      <div class="flex justify-center gap-6 mt-6">
+        <div class="w-32 p-6  shadow-xl rounded-lg text-center">
+          <div class="text-xl text-blue-600"><i class="fa fa-at font-bold"></i></div>
+          <div class="text-lg font-semibold">Email</div>
+        </div>
+        <div class="w-32 p-6  shadow-xl rounded-lg text-center">
+          <div class="text-3xl text-green-600"><i class="text-blue-600 fa-brands fa-whatsapp"></i></div>
+          <div class="text-lg font-semibold">Phone Number</div>
+        </div>
       </div>
     </div>
-
-    <!-- Pagination -->
-    <nav class="mt-8">
-      <ul class="flex justify-center space-x-2">
-        <li><a href="#" class="px-4 py-2 bg-gray-200 rounded">«</a></li>
-        <li><a href="#" class="px-4 py-2 bg-blue-500 text-white rounded">1</a></li>
-        <li><a href="#" class="px-4 py-2 bg-gray-200 rounded">2</a></li>
-        <li><a href="#" class="px-4 py-2 bg-gray-200 rounded">3</a></li>
-        <li><a href="#" class="px-4 py-2 bg-gray-200 rounded">4</a></li>
-        <li><a href="#" class="px-4 py-2 bg-gray-200 rounded">5</a></li>
-        <li><span class="px-4 py-2">…</span></li>
-        <li><a href="#" class="px-4 py-2 bg-gray-200 rounded">3689</a></li>
-        <li><a href="#" class="px-4 py-2 bg-gray-200 rounded">»</a></li>
-      </ul>
-    </nav>
   </div>
-</div>
- <!-- page-12 aboutus page -->
+  <!-- details-section-2 -->
+   <div>
+    <h4 class="border-l-4 border-[#008bcf] pt-[6px] pr-[20px] pl-[12px] pb-[10px] rounded-xs bg-gradient-to-r from-[#e0f5ff] via-[#e0f5ff] to-white w-fit mb-5 text-2xl font-semibold text-gray-800">Listing your Books</h4>
+    <div class="px-5 pb-20">
+    <p>It is very easy to upload your books on Clankart for sale! Your books ad gets live instantly after you post it.</p>
+    <h5 class="border-l-4 border-neutral-400 py-1  pl-3 font-bold text-xl mt-10 mb-5">How to Upload your Book for Sale?</h5>
+    <p class="font-serif">
+      Once you signup, go to
+      <a href="/post-ad" target="_blank" class="text-blue-500">Sell Used Books</a>
+      page and upload your book for sale. The process to list your book is simple.
+    </p>
+
+    <!-- Book Details Section -->
+    <p class=" mb-3">At that page, you will see the <span class="font-bold text-neutral-600">'Book Details'</span> section:</p>
+    <img class="max-w-full max-h-[350px] rounded-lg  shadow-sm" alt="" src="https://www.clankart.com/static-assets/post-adv-step1.png" />
+
+    <ul class="list-disc pl-5 mt-3">
+      <li class="mb-3">
+        The first field is for the <span class="font-bold text-neutral-600">Ad Title</span>. Enter a descriptive title for your ad that accurately represents the book you are selling.
+      </li>
+      <li class="mb-3">
+        The next field is <span class="font-bold text-neutral-600">Book Details</span>. You can enter details manually or use the 13-digit ISBN number.
+        <ul class="list-disc pl-5 mt-2">
+          <li class="mb-3">
+            If you select the <span class="font-bold text-neutral-600">'Automatically; by just typing the ISBN number'</span> option, Clankart will fetch details automatically.
+          </li>
+          <li class="mb-3">
+            If the book doesn't have an ISBN, you can enter details manually by selecting <span class="font-bold text-neutral-600">'Enter book details manually'</span>.
+          </li>
+        </ul>
+      </li>
+      <li>
+        <span class="font-bold text-neutral-600">Book Condition</span>: Choose the condition that best reflects the book’s actual state.
+      </li>
+      <li>
+        <span class="font-bold text-neutral-600">Upload Photos</span>: Upload at least 3 high-quality photos to increase your chances of getting an order.
+      </li>
+    </ul>
+
+    <div class="my-10 border-b border-neutral-300"></div>
+
+    <!-- Pricing Details Section -->
+    <p>Next, you will see the <span class="font-bold text-neutral-600">'Pricing Details'</span> section:</p>
+    <img class="max-w-full max-h-[350px] rounded-lg  shadow-sm" alt="" src="https://www.clankart.com/static-assets/post-adv-step2a.png" />
+
+    <ul class="list-disc pl-5 mt-3 py-3">
+      <li>Then is
+        <span class="font-bold text-neutral-600">Your Price</span> field. In this field you set the price for the book at which you want to sell it. Try to list a reasonable price based as this increases the chances of attracting potential buyers and making a sale.
+      </li>
+      <div class="p-4 bg-green-100 rounded-md shadow-md">
+        <ul class="list-disc pl-5">
+          <li class="py-4">
+            Clankart acts as an intermediary in the transaction.<span class="font-bold text-neutral-900"> Collecting payment from the buyer and releasing payment into the seller account will be the responsibility of Clankart.</span> All you will need is to ship the book to the buyer once you receive an order.
+          </li>
+          <li class="py-4">
+           <span class="font-bold text-neutral-900"> When a buyer purchases a book, they make the payment to Clankart.</span> Clankart notifies the seller that they have received an order for their book and the payment is held securely by Clankart. This means that <span class="font-bold text-neutral-900">the seller can ship the item to the buyer with confidence, knowing that Clankart has already received the order payment from the buyer and they will receive the payment once the book is received to the buyer.</span> This process ensures seller payment security and builds trust between the buyer and seller
+          </li>
+          <li class="py-4">
+            Clankart assures the seller that they will receive the payment for their sale once the buyer receives the item.
+          </li>
+          <li class="py-4">
+            Clankart enables sellers to sell books with confidence, no matter where they are located in India while also enjoying the convenience and security of the transaction process provided by Clankart.
+          </li>
+          <li class="py-4">
+            No need to complete the transaction offline with the buyer for making payment arrangements and coordinating a meet-up to exchange the book.
+          </li>
+        </ul>
+      </div>
+      <li class="py-4">
+        Next is
+        <span class="font-bold text-neutral-400">'Your shipping charges to buyer</span>When a user selects the option to ship the book to a buyer, you will also be asked to specify your shipping charges to the buyer upfront. This is the amount the buyer will need to pay to you in addition to the book's price in order to cover the cost of shipping.
+      </li>
+      <li class="py-4">
+        Next is 
+        <span class="font-bold text-neutral-400"> 'Preferred Payment Mode'</span>Then you need to specify your preferred mode of payment for receiving the payment from Clankart once the book is sold. Please note that seller will be asked to provide these details only after they receive an order for their book.
+      </li>
+    </ul>
+
+    <div class="my-10 border-b border-neutral-400"></div>
+
+    <!-- Your Details Section -->
+    <p>Next, is the <span class="font-bold text-neutral-400">'Your Details'</span> section:</p>
+    <img class="max-w-full max-h-[350px] rounded-lg shadow-sm" alt="" src="https://www.clankart.com/static-assets/post-adv-step4.png" />
+
+    <ul class="list-disc pl-5 mt-3">
+      <li class="py-3">
+        This is one time step only. Here you need to provide your information, such as name, email address, phone number and pincode. Please note that your email address and phone number will not be shared to the buyer.
+      </li>
+    </ul>
+
+    <p class="mt-5">
+      Last, simply click on the
+      <a href="https://www.clankart.com/post-ad" target="_blank" class="btn btn-sm bg-yellow-400  px-3 py-1 rounded">Post Ad</a>
+      button. After clicking the button, the book ad will go live on Clankart. From there, interested buyers can view the book details, contact you with 'Chat button' for any questions, and make an offer to purchase the book if they are interested.
+
+
+    </p>
+  </div> 
+  </div>
+  
+        </div>
+        <!-- section-3 -->
+        <div class="w-full bg-white overflow-hidden box-border marquee-container">
+    <p class="inline-block w-full text-8xl font-extrabold marquee-text m-0 animate-marquee">
+      BUY. SELL. REUSE. REPEAT.
+    </p>
+  </div>
+        <!-- section-4 -->
+  <div class="bg-white  ">
+    <!-- Desktop Image -->
+    <img 
+      src="https://www.clankart.com/static-assets/about-us-footer.png" 
+      alt="save the planet" 
+      class="hidden md:block w-full"
+    >
+    <!-- Mobile Image -->
+    <img 
+      src="https://www.clankart.com/static-assets/about-us-footer-m.png" 
+      alt="save the planet" 
+      class="block md:hidden w-full"
+    >
+  </div>
+  <!-- section-5 -->
+   <!--  aboutus page-1  -->
  <div class="pt-[32.5px] px-[15px] flex justify-between sm:flex-col xl:flex-row sm:h-[630px] xl:h-[259px]">
               <!-- first -->
               <div class="pb-[6.5px] w-[291.5px] h-[208.9px] px-[9.7px]">
@@ -282,7 +291,7 @@
                
               </div>
              </div>
- <!-- page-13 -->
+ <!--  aboutus page -->
  <div class="pt-[16.5px]">
                 <div class="px-[15px]">
                   <!-- social links -->
@@ -372,46 +381,41 @@
                 </div>
               </div>
 </template>
+<script setup>
+import { ref } from 'vue';
 
-<script setup >
-
-  import { onMounted, ref } from 'vue'
-   
-    const isConditionOpen = ref(true);
-      const  isTypeOpen= ref(true);
-      const isCategoryOpen = ref(true);
-      const Allbook = ref([]);
-
-    
-   
-  
- 
-   const toggleAccordion=(section) => {
-      if (section === 'condition') {
-        isConditionOpen.value = !isConditionOpen.value;
-      } else if (section === 'type') {
-        isTypeOpen.value = !isTypeOpen.value;
-      } else if (section === 'category') {
-        isCategoryOpen.value = !isCategoryOpen.value;
-      }
-   
-  };
-
-  const fetchBookData = async () =>{
-
-try{
-
-  const response = await fetch("https://www.dbooks.org/api/recent", {
-    method: "GET",
-  credentials: "omit", // Prevents sending cookies
-  });
-  const data =await response.json();
-  Allbook.value = data.books
-  console.log(books.value)
-}
-catch(error){
-console.error("error fetched:",error);
-}
-}
-onMounted(fetchBookData);
+const steps = ref([
+{
+          image: "https://www.clankart.com/static-assets/seller-signup.svg",
+          title: "Sign up for free",
+          description: `<a href="/login-signup" target="_blank" class="text-blue-500 underline">Create a free account</a> on Clankart. All you need is an email and phone number.`,
+        },
+        {
+          image: "https://www.clankart.com/static-assets/take-a-picture.svg",
+          title: "Upload your books",
+          description: `After signup, upload your books by clicking on <a href="/post-ad" target="_blank" class="text-blue-500 underline">'Sell Used Books'</a>.`,
+        },
+        {
+          image: "https://www.clankart.com/static-assets/seller-ships.svg",
+          title: "Receive & Ship Orders",
+          description: `After receiving an order, pack it and ship it to the buyer's address.`,
+        },
+        {
+          image: "https://www.clankart.com/static-assets/money-release.svg",
+          title: "Receive Payments",
+          description: `Payment is securely deposited to your bank/UPI account after the order is delivered.`,
+        },
+])
 </script>
+<style scoped>
+@keyframes marquee {
+    0%{transform: translateX(100%);}
+    100%{transform: translateX(-100%);}
+}
+
+.animate-marquee{
+    display: inline-block;
+    white-space: nowrap;
+    animation: marquee 10s linear infinite;
+}
+</style>

@@ -1,14 +1,14 @@
 <template>
-   <!-- Home.vue ki page-1 -->
-<div class="header xl:h-[110px] sm:h-[60px] fixed z-20 bg-white w-screen  px-4 flex ">
-    <div class="inner-header 2xl:mx-[19.5px] pl-2 w-screen flex flex-row items-center justify-between">
+      <!-- common header  -->
+   <div class="header xl:h-[110px] shadow-lg sm:h-[60px] fixed z-20 bg-white w-screen  px-4 flex ">
+    <div class="inner-header 2xl:mx-[19.5px] pl-2 w-screen flex flex-row items-center sm:justify-between xl:justify-center">
         
       <div class="clankart-img flex items-center justify-between xl:ml-[6.5px] 2xl:h-[55px] 2xl:w-[150px]  sm:h-[40px] xl:w-[120px] xl:h-[48px] xl:pl-2 2xl:mr-[32.5px] sm:mr-4">
        <!-- hamburger -->
        <div class="sm:flex xl:hidden sm:pl-[6px]">
             <i class="text-xl fa-solid fa-bars"></i>
         </div>
-        <a href="/" class="py-[5.7px] pl-4 ">
+        <a href="/" class="py-[5.7px] pl-4 xl:pr-4">
           <img class="2xl:w-[150px] 2xl:h-[55px] sm:w-[120px] sm:h-[48px] " width="150" height="55" src="https://www.clankart.com/user-uploads/static-assets/logo.png"/>
         </a>
       </div>
@@ -19,12 +19,13 @@
         <button class="bg-[#0083ca] px-[20.5px] py-[10.7px] text-white text-lg">Search</button>
        
     </div>
-     <div class=" yellow-button ">
+    <!-- buttons -->
+     <div class=" yellow-button xl:pr-18 ">
         <button class="px-[9.7px] py-[10.7px] sm:hidden 2xl:flex border border-[#e1b70d] bg-[#fcec52] h-[47px] w-[150px] rounded-sm ">Sell Used Books</button>
         <button class="px-[9.7px] py-[10.7px] border sm:flex 2xl:hidden border-[#e1b70d] bg-[#fcec52] h-[47px] w-[100px] justify-center items-center text-2xl rounded-sm ">+SELL</button>
     </div>
       </div>
-    
+    <!-- cart and account -->
       <div class="account-and-cart-button text-sm flex sm:hidden 2xl:flex text-[#5b5b5b]">
         <button class="mr-[16.2px] text-center"><i class="text-lg fa-solid fa-user"></i><br/><span class="">Account</span></button>
         <button class="flex flex-col text-sm"><i class="text-lg fa-solid fa-cart-shopping"></i><span>Cart</span></button>
@@ -36,213 +37,83 @@
       </div>
     </div>
   </div>
-  <!-- part-1 -->
-    <section class="pb-10 px-16 pt-[140px] bg-[#f7f8fa]">
-    <div class="container mx-auto">
-      <nav>
-        <!-- begin::breadcrumbs -->
-        <ol class="flex text-gray-600 text-sm font-semibold pb-3">
-          <li class="px-3">
-            <a href="/" class="pe-3 text-blue-600 hover:underline">Home</a>
-          </li>
-          <li class="px-3">
-            <a href="/books" class="pe-3 text-blue-600 hover:underline">Books</a>
-          </li>
-          <li class="px-3 text-gray-500">Used Books</li>
-        </ol>
-        <!-- end::breadcrumbs -->
-      </nav>
-      <h1 class="text-2xl font-semibold text-gray-800">
-        Find from over 1000s of used books online
-      </h1>
+    <!-- medium section -->
+     <section class="pb-12 pt-[150px] bg-white">
+    <div class="container mx-auto  w-full ">
+      <div class="text-center mb-8">
+        <h1 class="text-3xl font-bold text-gray-900 mb-4">Privacy Policy</h1>
+        <p class="text-gray-600 text-sm">
+          We value the trust you place in us. That's why we insist upon the highest standards for secure transactions and customer information privacy. Please read the following statement to learn about our information gathering and dissemination practices.
+        </p>
+      </div>
+
+      <ul class="space-y-8">
+        <li class=" ">
+          <h3 class="text-xl font-semibold text-gray-700 mb-1">.Note:</h3>
+          <p class="text-gray-600 text-start">
+            Our privacy policy is subject to change at any time without notice. To make sure you are aware of any changes, please review this policy periodically. By visiting this Website you agree to be bound by the terms and conditions of this Privacy Policy. If you do not agree please do not use or access our Website. By mere use of the Website, you expressly consent to our use and disclosure of personal information provided by you in accordance with this Privacy Policy. This Privacy Policy is incorporated into and subject to the Terms of Use.
+          </p>
+        </li>
+
+        <li class="">
+          <h3 class="text-xl font-semibold text-gray-600 mb-1">.Collection.</h3>
+          <p class="text-gray-600 mb-1">
+            When you use our Website, we collect and store your personal information which is voluntarily provided by you from time to time.
+          </p>
+          <ul class="space-y-2 pl-6 list-disc text-gray-900">
+            <li>We collect personal information like email address, phone number, physical contact information, and (depending on the service used) sometimes financial information.</li>
+            <li>Other information, including users IP address and standard web log information.</li>
+            <li>We use data collection devices such as "cookies" on certain pages of the Website.</li>
+          </ul>
+        </li>
+
+        <li class="">
+          <h3 class="text-xl font-semibold text-gray-600 mb-">.Use.</h3>
+          <p class="text-gray-600 mb-4">
+            We use users' personal information to:
+          </p>
+          <ul class="space-y-2 pl-6 list-disc text-gray-900">
+            <li>provide our services</li>
+            <li>resolve disputes, collect fees, and troubleshoot problems</li>
+            <li>encourage safe trading and enforce our policies</li>
+            <li>customize users' experience, measure interest in our services, and inform users about services and updates</li>
+            <li>communicate marketing and promotional offers to you</li>
+            <li>Do other things for users as described when we collect the information.</li>
+          </ul>
+        </li>
+
+        <li class="">
+          <h3 class="text-xl font-semibold text-gray-600 mb-1">.Disclosure.</h3>
+          <p class="text-gray-600 mb-4">
+            We may disclose users' personal information in the following circumstances:
+          </p>
+          <ul class="space-y-2 pl-6 list-disc text-gray-900">
+            <li>We may be required from time to time to disclose users' personal information to Governmental or law enforcing agencies or our regulators, but we will only do so under proper authority.</li>
+            <li>Clankart also reserves the right to make use of the personal information in any investigation or judicial process relating to fraud on account of such transactions during the period Clankart retains such information.</li>
+            <li>We may also disclose personal information to enforce our policies, respond to claims that a posting or other content violates others' rights, or protects anyone's rights, property or safety.</li>
+            <li>Third party vendors, including Google, use cookies to serve ads based on a user's prior visits to the website.</li>
+            <li>Do other things for users as described when we collect the information.</li>
+          </ul>
+        </li>
+
+        <li class="">
+          <h3 class="text-xl font-semibold text-gray-600 mb-1">.Confidentiality of Information.</h3>
+          <p class="text-gray-600">
+            Users who use any of the features on Clankart agree and accept that they have been fully informed by Clankart that the use of features may lead to publication, to all users of Clankart, of any personal information posted by them while using any specific feature on Clankart. Users further agree that the authenticity of, and consequences from the posting by users of any personal information of themselves or any other person, are the sole responsibility of the user. Users further agree and accept that the terms of the Privacy Policy will be applicable to the use of all features, existing and new. However, the Users agree and accept that confidentiality of information posted on such features has been waived by the Users of such features themselves.
+          </p>
+        </li>
+
+        <li class="">
+          <h3 class="text-xl font-semibold text-gray-600 mb-1">.General.</h3>
+          <p class="text-gray-600">
+            We may update, upgrade, modify (partially &amp;/or fully) this policy at any time, with updates taking effect when you next post or after 30 days, whichever is sooner. If we or our corporate affiliates are involved in a merger or acquisition, we may share personal information with another company, but this policy will continue to apply. Send questions about this policy to <a href="mailto:support@clankart.com" class="text-blue-600 hover:underline">support@clankart.com</a>.
+          </p>
+        </li>
+      </ul>
     </div>
   </section>
-  <!--  -->
-   <!-- <div class="py-8 px-[30px]"></div> -->
-   <!-- part-2 -->
-    <div class="flex my-12">
-   <div class="card-body mx-5 border h-fit border-neutral-300 rounded-lg p-7">
-    <div class="overflow-y-auto" style="height: fit-content;">
-      <!-- Book Condition Filter -->
-      <div class="border-b pb-4">
-        <article class="border-0">
-          <!-- Header -->
-          <div class="accordion-header flex justify-between items-center cursor-pointer" @click="toggleAccordion('condition')">
-            <h3 class="text-primary font-semibold">Book Condition</h3>
-            <span class="transform transition-transform" :class="{ 'rotate-180': isConditionOpen }">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-              </svg>
-            </span>
-          </div>
-          <!-- Body -->
-          <div v-if="isConditionOpen" class="mt-2">
-            <form class="space-y-2">
-              <div class="flex items-center">
-                <input type="checkbox"  id="excellent" class="form-checkbox h-4 w-4 text-primary">
-                <label for="excellent" class="ml-2 text-sm">Excellent</label>
-              </div>
-              <div class="flex items-center">
-                <input type="checkbox" id="good" class="form-checkbox h-4 w-4 text-primary">
-                <label for="good" class="ml-2 text-sm">Good</label>
-              </div>
-              <div class="flex items-center">
-                <input type="checkbox" id="fair" class="form-checkbox h-4 w-4 text-primary">
-                <label for="fair" class="ml-2 text-sm">Fair</label>
-              </div>
-            </form>
-          </div>
-        </article>
-      </div>
-
-      <!-- Book Type Filter -->
-      <div class="accordion border-b pb-4 mt-4">
-        <article class="accordion-item border-0">
-          <!-- Header -->
-          <div class="accordion-header flex justify-between items-center cursor-pointer" @click="toggleAccordion('type')">
-            <h3 class="text-primary font-semibold">Book Type</h3>
-            <span class="transform transition-transform" :class="{ 'rotate-180': isTypeOpen }">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-              </svg>
-            </span>
-          </div>
-          <!-- Body -->
-          <div v-if="isTypeOpen" class="mt-2">
-            <form class="space-y-2">
-              <div class="flex items-center">
-                <input type="checkbox" id="college" class="form-checkbox h-4 w-4 text-primary">
-                <label for="college" class="ml-2 text-sm">College Books (Higher Education Textbooks)</label>
-              </div>
-              <div class="flex items-center">
-                <input type="checkbox" id="exam_prep" class="form-checkbox h-4 w-4 text-primary">
-                <label for="exam_prep" class="ml-2 text-sm">Exam/Test Preparation Books</label>
-              </div>
-              <div class="flex items-center">
-                <input type="checkbox" id="reading" class="form-checkbox h-4 w-4 text-primary">
-                <label for="reading" class="ml-2 text-sm">Reading Books (Novels, Children, Business, Literature, History, etc.)</label>
-              </div>
-              <div class="flex items-center">
-                <input type="checkbox" id="school" class="form-checkbox h-4 w-4 text-primary">
-                <label for="school" class="ml-2 text-sm">School Books (up to 12th)</label>
-              </div>
-            </form>
-          </div>
-        </article>
-      </div>
-
-      <!-- Book Category Filter -->
-      <div class="accordion border-b pb-4 mt-4">
-        <article class="accordion-item border-0">
-          <!-- Header -->
-          <div class="accordion-header flex justify-between items-center cursor-pointer" @click="toggleAccordion('category')">
-            <h3 class="text-primary font-semibold">Book Category</h3>
-            <span class="transform transition-transform" :class="{ 'rotate-180': isCategoryOpen }">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-              </svg>
-            </span>
-          </div>
-          <!-- Body -->
-          <div v-if="isCategoryOpen" class="mt-2">
-            <input type="text" class="w-full p-2 border rounded mb-4" placeholder="Search...">
-            <form class="space-y-2">
-              <div class="flex items-center">
-                <input type="checkbox" id="10th" class="form-checkbox h-4 w-4 text-primary">
-                <label for="10th" class="ml-2 text-sm">10th</label>
-              </div>
-              <div class="flex items-center">
-                <input type="checkbox" id="11th" class="form-checkbox h-4 w-4 text-primary">
-                <label for="11th" class="ml-2 text-sm">11th</label>
-              </div>
-              <div class="flex items-center">
-                <input type="checkbox" id="12th" class="form-checkbox h-4 w-4 text-primary">
-                <label for="12th" class="ml-2 text-sm">12th</label>
-              </div>
-              <!-- Add more categories as needed -->
-            </form>
-          </div>
-        </article>
-      </div>
-    </div>
-  </div>
-  <!--  -->
-  <div class="col-span-9 mx-7 adv-list-pane">
-    <!-- Header Section -->
-    <header class="pb-8">
-      <div class="flex flex-col md:flex-row justify-between items-center">
-        <div>
-          <h2 class="text-2xl font-bold">Buy Second Hand Books, Used Books Online In India</h2>
-        </div>
-        <select class="form-select w-auto text-dark">
-          <option selected disabled>Sort</option>
-          <option value="1">Newest First</option>
-          <option value="2">Price - Low to High</option>
-          <option value="3">Price - High to Low</option>
-        </select>
-      </div>
-    </header>
-
-    <!-- Book List Section -->
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-      <!-- Book Card -->
-      <div v-for="book in Allbook" :key="book.id" class="adv-card">
-        <figure class="card overlay card-product-grid">
-          <div class="flex flex-col">
-            <!-- Image Container -->
-            <a :href="book.link" class="col-12 col-md-12">
-              <div class="flex flex-center img-wrap overlay-wrapper relative h-48 sm:h-56">
-                <img class="lazy w-full h-full object-cover" :src="book.image" :alt="book.title" />
-                <button class="btn-wishlist btn-sm text-hover-danger absolute top-2 right-2">
-                  <i class="bi bi-heart"></i>
-                </button>
-              </div>
-            </a>
-
-            <!-- Book Details -->
-            <div class="info-wrap p-4">
-              <a :href="book.link" class="title text-gray-800">
-                <div class="fix-height">
-                  <h3 class="text-xl font-semibold">{{ book.title }}</h3>
-                  <div class="price-wrap my-2 flex justify-between">
-                    <div>
-                      <span class="price text-lg font-bold">₹{{ book.price }}</span>
-                      <del v-if="book.oldPrice" class="price-old text-sm text-gray-500 ml-2">₹{{ book.oldPrice }}</del>
-                    </div>
-                    <div v-if="book.discount" class="badge bg-green-100 text-green-700 px-2 py-1 rounded">
-                      {{ book.discount }}% off
-                    </div>
-                  </div>
-                  <p v-if="book.description" class="text-sm text-gray-600 mt-2">{{ book.description }}</p>
-                </div>
-                <div class="flex flex-col lg:flex-row justify-between items-center mt-3">
-                  <span class="text-sm text-gray-500">{{ book.timeAgo }}</span>
-                </div>
-              </a>
-            </div>
-          </div>
-        </figure>
-      </div>
-    </div>
-
-    <!-- Pagination -->
-    <nav class="mt-8">
-      <ul class="flex justify-center space-x-2">
-        <li><a href="#" class="px-4 py-2 bg-gray-200 rounded">«</a></li>
-        <li><a href="#" class="px-4 py-2 bg-blue-500 text-white rounded">1</a></li>
-        <li><a href="#" class="px-4 py-2 bg-gray-200 rounded">2</a></li>
-        <li><a href="#" class="px-4 py-2 bg-gray-200 rounded">3</a></li>
-        <li><a href="#" class="px-4 py-2 bg-gray-200 rounded">4</a></li>
-        <li><a href="#" class="px-4 py-2 bg-gray-200 rounded">5</a></li>
-        <li><span class="px-4 py-2">…</span></li>
-        <li><a href="#" class="px-4 py-2 bg-gray-200 rounded">3689</a></li>
-        <li><a href="#" class="px-4 py-2 bg-gray-200 rounded">»</a></li>
-      </ul>
-    </nav>
-  </div>
-</div>
- <!-- page-12 aboutus page -->
- <div class="pt-[32.5px] px-[15px] flex justify-between sm:flex-col xl:flex-row sm:h-[630px] xl:h-[259px]">
+    <!-- footer section -->
+    <div class="pt-[32.5px] px-[15px] flex justify-between sm:flex-col xl:flex-row sm:h-[630px] xl:h-[259px]">
               <!-- first -->
               <div class="pb-[6.5px] w-[291.5px] h-[208.9px] px-[9.7px]">
                 <h1 class="text-xl font-semibold text-neutral-400 pb-[13px]">ABOUT US</h1>
@@ -272,17 +143,17 @@
                 <h1 class="text-xl font-semibold text-neutral-400 pb-[13px]">STAY CONNECTED</h1>
                   <ul class=" mb-[3rem] text-[#555] font-semibold text-lg ">
                   <li class=" pb-[13.2px] mb-[6.5px] text-2xl flex flex-row space-x-6">
-                    <i class="hover:text-blue-700 fa-brands fa-facebook"></i>
-                    <i class="hover:text-pink-500 fa-brands fa-instagram"></i>
-                    <i class="hover:text-red-500 fa-brands fa-youtube"></i>
-                    <i class="hover:text-blue-600 fa-brands fa-twitter"></i>
+                  <a href="https://www.facebook.com/clankart/">  <i class="hover:text-blue-700 fa-brands fa-facebook"></i></a>
+                   <a href="https://www.instagram.com/clankart/"> <i class="hover:text-pink-500 fa-brands fa-instagram"></i></a>
+                   <a href="https://www.youtube.com/@clankart"> <i class="hover:text-red-500 fa-brands fa-youtube"></i></a>
+                   <a href="https://twitter.com/clankartTeam"> <i class="hover:text-blue-600 fa-brands fa-twitter"></i></a>
                   </li>
                     
                   </ul>
                
               </div>
              </div>
- <!-- page-13 -->
+ <!--  aboutus page -->
  <div class="pt-[16.5px]">
                 <div class="px-[15px]">
                   <!-- social links -->
@@ -372,46 +243,3 @@
                 </div>
               </div>
 </template>
-
-<script setup >
-
-  import { onMounted, ref } from 'vue'
-   
-    const isConditionOpen = ref(true);
-      const  isTypeOpen= ref(true);
-      const isCategoryOpen = ref(true);
-      const Allbook = ref([]);
-
-    
-   
-  
- 
-   const toggleAccordion=(section) => {
-      if (section === 'condition') {
-        isConditionOpen.value = !isConditionOpen.value;
-      } else if (section === 'type') {
-        isTypeOpen.value = !isTypeOpen.value;
-      } else if (section === 'category') {
-        isCategoryOpen.value = !isCategoryOpen.value;
-      }
-   
-  };
-
-  const fetchBookData = async () =>{
-
-try{
-
-  const response = await fetch("https://www.dbooks.org/api/recent", {
-    method: "GET",
-  credentials: "omit", // Prevents sending cookies
-  });
-  const data =await response.json();
-  Allbook.value = data.books
-  console.log(books.value)
-}
-catch(error){
-console.error("error fetched:",error);
-}
-}
-onMounted(fetchBookData);
-</script>

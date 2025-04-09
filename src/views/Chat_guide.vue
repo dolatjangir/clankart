@@ -1,14 +1,14 @@
 <template>
-   <!-- Home.vue ki page-1 -->
-<div class="header xl:h-[110px] sm:h-[60px] fixed z-20 bg-white w-screen  px-4 flex ">
-    <div class="inner-header 2xl:mx-[19.5px] pl-2 w-screen flex flex-row items-center justify-between">
+   <!-- common header  -->
+   <div class="header xl:h-[110px] shadow-lg sm:h-[60px] fixed z-20 bg-white w-screen  px-4 flex ">
+    <div class="inner-header 2xl:mx-[19.5px] pl-2 w-screen flex flex-row items-center sm:justify-between xl:justify-center">
         
       <div class="clankart-img flex items-center justify-between xl:ml-[6.5px] 2xl:h-[55px] 2xl:w-[150px]  sm:h-[40px] xl:w-[120px] xl:h-[48px] xl:pl-2 2xl:mr-[32.5px] sm:mr-4">
        <!-- hamburger -->
        <div class="sm:flex xl:hidden sm:pl-[6px]">
             <i class="text-xl fa-solid fa-bars"></i>
         </div>
-        <a href="/" class="py-[5.7px] pl-4 ">
+        <a href="/" class="py-[5.7px] pl-4 xl:pr-4">
           <img class="2xl:w-[150px] 2xl:h-[55px] sm:w-[120px] sm:h-[48px] " width="150" height="55" src="https://www.clankart.com/user-uploads/static-assets/logo.png"/>
         </a>
       </div>
@@ -19,12 +19,13 @@
         <button class="bg-[#0083ca] px-[20.5px] py-[10.7px] text-white text-lg">Search</button>
        
     </div>
-     <div class=" yellow-button ">
+    <!-- buttons -->
+     <div class=" yellow-button xl:pr-18 ">
         <button class="px-[9.7px] py-[10.7px] sm:hidden 2xl:flex border border-[#e1b70d] bg-[#fcec52] h-[47px] w-[150px] rounded-sm ">Sell Used Books</button>
         <button class="px-[9.7px] py-[10.7px] border sm:flex 2xl:hidden border-[#e1b70d] bg-[#fcec52] h-[47px] w-[100px] justify-center items-center text-2xl rounded-sm ">+SELL</button>
     </div>
       </div>
-    
+    <!-- cart and account -->
       <div class="account-and-cart-button text-sm flex sm:hidden 2xl:flex text-[#5b5b5b]">
         <button class="mr-[16.2px] text-center"><i class="text-lg fa-solid fa-user"></i><br/><span class="">Account</span></button>
         <button class="flex flex-col text-sm"><i class="text-lg fa-solid fa-cart-shopping"></i><span>Cart</span></button>
@@ -36,213 +37,103 @@
       </div>
     </div>
   </div>
-  <!-- part-1 -->
-    <section class="pb-10 px-16 pt-[140px] bg-[#f7f8fa]">
-    <div class="container mx-auto">
-      <nav>
-        <!-- begin::breadcrumbs -->
-        <ol class="flex text-gray-600 text-sm font-semibold pb-3">
-          <li class="px-3">
-            <a href="/" class="pe-3 text-blue-600 hover:underline">Home</a>
-          </li>
-          <li class="px-3">
-            <a href="/books" class="pe-3 text-blue-600 hover:underline">Books</a>
-          </li>
-          <li class="px-3 text-gray-500">Used Books</li>
-        </ol>
-        <!-- end::breadcrumbs -->
-      </nav>
-      <h1 class="text-2xl font-semibold text-gray-800">
-        Find from over 1000s of used books online
-      </h1>
+  <!-- middle section -->
+      <section class="pb-12 pt-[148px] bg-white">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-8">
+        <h1 class="text-2xl font-semibold text-gray-800">Chat Guidelines</h1>
+        <p class="text-md mt-4  ">
+          Welcome to Clankart's Chat Guidelines page! At Clankart, we strive to create a safe and respectful environment for our users. 
+          By following these guidelines, you can help ensure a positive experience for everyone.
+        </p>
+      </div>
+
+      <ul class="space-y-8">
+        <!-- Guideline 1 -->
+        <li class=" py-6 ">
+          <h3 class="text-xl font-semibold text-gray-500 mb-4">1. Stay Safe from Frauds and Phishing:</h3>
+          <ul class="space-y-2 pl-5 list-disc">
+            <li>
+              <span class="font-semibold">Verify URLs / Links Before Clicking:</span> 
+              <span class="text-gray-700 bg-[#ffe4c4] "> Be cautious with URLs / links shared in chat. Fraudsters may share malicious links to steal your banking or personal information. Always verify the authenticity of links before clicking.</span>
+            </li>
+            <li>
+              <span class="font-semibold">Phishing Awareness:</span> 
+              <span class="text-gray-700 bg-[#ffe4c4]">  Be aware of phishing attempts. Scammers may attempt to deceive you by sending messages that appear to be from Clankart, requesting verification of your account or asking for sensitive information or opening some links. If you receive such message asking for your personal details or directing you to a spoof website mimicking Clankart, do not respond or provide any information; report them to us</span>
+              <p class="mt-2 p-3   text-red-500 font-semibold">
+               <span class="bg-[#ffe4c4]"> Clankart will NEVER ask you to verify your account by providing your bank details, ask for money, or other sensitive information through chat, phone, email, or any other method.
+               </span>  </p><span>Stay alert and protect yourself from scams.</span>
+            </li>
+            <li>
+              <span class="font-semibold">Avoid Sharing Personal Information:</span> 
+              <span class="text-gray-700 ">Never share sensitive information like bank details, passwords, or personal identification numbers. Clankart will never ask for such information through chat, phone, email, or any other method.</span>
+            </li>
+            <li>
+              <span class="font-semibold">Report Suspicious Activity:</span> 
+              <span class="text-gray-700"> If you receive messages that seem suspicious or too good to be true, report them to us immediately at </span>
+              <a href="mailto:support@clankart.com" class="text-blue-600 hover:underline">support@clankart.com</a>.
+            </li>
+          </ul>
+        </li>
+
+        <!-- Guideline 2 -->
+        <li class=" py-6 ">
+          <h3 class="text-xl font-semibold text-gray-500 mb-4">2. Be Respectful</h3>
+          <ul class="space-y-2 pl-5 list-disc">
+            <li><span class="font-semibold">Polite Communication:</span> <span class="text-gray-700">   Always communicate politely and respectfully. Abusive language, harassment, and hate speech are not tolerated.</span></li>
+            <li><span class="font-semibold">Respect Privacy:</span> <span class="text-gray-700">  Respect the privacy of other users. Do not share their personal information without consent.</span></li>
+            <li><span class="font-semibold">Avoid Spam:</span> <span class="text-gray-700">  Do not send repetitive, unsolicited messages. Spamming disrupts the chat experience for everyone.</span></li>
+            <li><span class="font-semibold">Constructive Feedback:</span> <span class="text-gray-700">  If you have feedback or a complaint, provide it constructively and through appropriate channels.</span></li>
+          </ul>
+        </li>
+
+        <!-- Guideline 3 -->
+        <li class=" py-6 ">
+          <h3 class="text-xl font-semibold text-gray-500 mb-4">3. Blocking and Reporting Users</h3>
+          <ul class="space-y-2 pl-5 list-disc">
+            <li><span class="font-semibold">Blocking Users:</span> <span class="text-gray-700"> If you wish to stop receiving messages from a particular user, you can block them. To do so, click the 'Block' button at the top of the chat panel.</span></li>
+            <li><span class="font-semibold">Reporting Misconduct:</span> <span class="text-gray-700"> If a user violates our guidelines, report their behavior to us. We take all reports seriously and will take appropriate action.</span></li>
+          </ul>
+        </li>
+
+        <!-- Guideline 4 -->
+        <li class=" py-6 ">
+          <h3 class="text-xl font-semibold text-gray-500 mb-4">4. Best Practices for Safe Chatting</h3>
+          <ul class="space-y-4 pl-5 list-disc">
+            <li><span class="font-semibold">Use Built-in Chat Features:</span> <span class="text-gray-700">Utilize Clankart's built-in chat features to ensure secure communication. Avoid using external messaging apps for transactions.</span></li>
+            <li><span class="font-semibold">Stay Informed:</span> <span class="text-gray-700">Stay informed about common online scams and how to avoid them. Knowledge is your best defense against fraud.</span></li>
+          </ul>
+        </li>
+
+        <!-- Guideline 5 -->
+        <li class="py-6 ">
+          <h3 class="text-xl font-semibold text-gray-500 mb-4">5. Our Commitment</h3>
+          <ul class="space-y-4 pl-5 list-disc">
+            <li><span class="font-semibold">Warnings:</span> <span class="text-gray-700"> For any message containing a link, we show a red colour warning message in every chat window:</span></li>
+            <li class="list-none">  <div class="mt-4">
+            <img src="https://www.clankart.com/static-assets/scam-message-alert.png" alt="Scam warning example" class=" shadow-sm w-[625.3px] h-[125px]">
+          </div></li>
+            <li><span class="font-semibold">Protecting Your Data:</span> <span class="text-gray-700"> Clankart is committed to protecting your data and privacy.</span></li>
+            <li><span class="font-semibold">Prompt Action:</span> <span class="text-gray-700"> We act promptly on reports of suspicious activity and take necessary actions to protect our users.</span></li>
+            <li><span class="font-semibold">Continuous Improvement:</span> <span class="text-gray-700"> We continuously improve our security features and guidelines to provide a safe and enjoyable experience for our users.</span></li>
+          </ul>
+        
+        </li>
+      </ul>
+
+      <div class="mt-8 text-start space-y-2">
+        <p class="text-base text-gray-700">
+          If you have any questions or need assistance, please contact our support team at
+          <a href="mailto:support@clankart.com" class="text-blue-600 hover:underline">support@clankart.com</a>. We are here to help and ensure your safety on Clankart.
+        </p>
+        <p class="text-base text-gray-700">
+          Thank you for being a part of the Clankart community. By following these guidelines, you contribute to a safer and more respectful environment for everyone.
+        </p>
+      </div>
     </div>
   </section>
-  <!--  -->
-   <!-- <div class="py-8 px-[30px]"></div> -->
-   <!-- part-2 -->
-    <div class="flex my-12">
-   <div class="card-body mx-5 border h-fit border-neutral-300 rounded-lg p-7">
-    <div class="overflow-y-auto" style="height: fit-content;">
-      <!-- Book Condition Filter -->
-      <div class="border-b pb-4">
-        <article class="border-0">
-          <!-- Header -->
-          <div class="accordion-header flex justify-between items-center cursor-pointer" @click="toggleAccordion('condition')">
-            <h3 class="text-primary font-semibold">Book Condition</h3>
-            <span class="transform transition-transform" :class="{ 'rotate-180': isConditionOpen }">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-              </svg>
-            </span>
-          </div>
-          <!-- Body -->
-          <div v-if="isConditionOpen" class="mt-2">
-            <form class="space-y-2">
-              <div class="flex items-center">
-                <input type="checkbox"  id="excellent" class="form-checkbox h-4 w-4 text-primary">
-                <label for="excellent" class="ml-2 text-sm">Excellent</label>
-              </div>
-              <div class="flex items-center">
-                <input type="checkbox" id="good" class="form-checkbox h-4 w-4 text-primary">
-                <label for="good" class="ml-2 text-sm">Good</label>
-              </div>
-              <div class="flex items-center">
-                <input type="checkbox" id="fair" class="form-checkbox h-4 w-4 text-primary">
-                <label for="fair" class="ml-2 text-sm">Fair</label>
-              </div>
-            </form>
-          </div>
-        </article>
-      </div>
-
-      <!-- Book Type Filter -->
-      <div class="accordion border-b pb-4 mt-4">
-        <article class="accordion-item border-0">
-          <!-- Header -->
-          <div class="accordion-header flex justify-between items-center cursor-pointer" @click="toggleAccordion('type')">
-            <h3 class="text-primary font-semibold">Book Type</h3>
-            <span class="transform transition-transform" :class="{ 'rotate-180': isTypeOpen }">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-              </svg>
-            </span>
-          </div>
-          <!-- Body -->
-          <div v-if="isTypeOpen" class="mt-2">
-            <form class="space-y-2">
-              <div class="flex items-center">
-                <input type="checkbox" id="college" class="form-checkbox h-4 w-4 text-primary">
-                <label for="college" class="ml-2 text-sm">College Books (Higher Education Textbooks)</label>
-              </div>
-              <div class="flex items-center">
-                <input type="checkbox" id="exam_prep" class="form-checkbox h-4 w-4 text-primary">
-                <label for="exam_prep" class="ml-2 text-sm">Exam/Test Preparation Books</label>
-              </div>
-              <div class="flex items-center">
-                <input type="checkbox" id="reading" class="form-checkbox h-4 w-4 text-primary">
-                <label for="reading" class="ml-2 text-sm">Reading Books (Novels, Children, Business, Literature, History, etc.)</label>
-              </div>
-              <div class="flex items-center">
-                <input type="checkbox" id="school" class="form-checkbox h-4 w-4 text-primary">
-                <label for="school" class="ml-2 text-sm">School Books (up to 12th)</label>
-              </div>
-            </form>
-          </div>
-        </article>
-      </div>
-
-      <!-- Book Category Filter -->
-      <div class="accordion border-b pb-4 mt-4">
-        <article class="accordion-item border-0">
-          <!-- Header -->
-          <div class="accordion-header flex justify-between items-center cursor-pointer" @click="toggleAccordion('category')">
-            <h3 class="text-primary font-semibold">Book Category</h3>
-            <span class="transform transition-transform" :class="{ 'rotate-180': isCategoryOpen }">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-              </svg>
-            </span>
-          </div>
-          <!-- Body -->
-          <div v-if="isCategoryOpen" class="mt-2">
-            <input type="text" class="w-full p-2 border rounded mb-4" placeholder="Search...">
-            <form class="space-y-2">
-              <div class="flex items-center">
-                <input type="checkbox" id="10th" class="form-checkbox h-4 w-4 text-primary">
-                <label for="10th" class="ml-2 text-sm">10th</label>
-              </div>
-              <div class="flex items-center">
-                <input type="checkbox" id="11th" class="form-checkbox h-4 w-4 text-primary">
-                <label for="11th" class="ml-2 text-sm">11th</label>
-              </div>
-              <div class="flex items-center">
-                <input type="checkbox" id="12th" class="form-checkbox h-4 w-4 text-primary">
-                <label for="12th" class="ml-2 text-sm">12th</label>
-              </div>
-              <!-- Add more categories as needed -->
-            </form>
-          </div>
-        </article>
-      </div>
-    </div>
-  </div>
-  <!--  -->
-  <div class="col-span-9 mx-7 adv-list-pane">
-    <!-- Header Section -->
-    <header class="pb-8">
-      <div class="flex flex-col md:flex-row justify-between items-center">
-        <div>
-          <h2 class="text-2xl font-bold">Buy Second Hand Books, Used Books Online In India</h2>
-        </div>
-        <select class="form-select w-auto text-dark">
-          <option selected disabled>Sort</option>
-          <option value="1">Newest First</option>
-          <option value="2">Price - Low to High</option>
-          <option value="3">Price - High to Low</option>
-        </select>
-      </div>
-    </header>
-
-    <!-- Book List Section -->
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-      <!-- Book Card -->
-      <div v-for="book in Allbook" :key="book.id" class="adv-card">
-        <figure class="card overlay card-product-grid">
-          <div class="flex flex-col">
-            <!-- Image Container -->
-            <a :href="book.link" class="col-12 col-md-12">
-              <div class="flex flex-center img-wrap overlay-wrapper relative h-48 sm:h-56">
-                <img class="lazy w-full h-full object-cover" :src="book.image" :alt="book.title" />
-                <button class="btn-wishlist btn-sm text-hover-danger absolute top-2 right-2">
-                  <i class="bi bi-heart"></i>
-                </button>
-              </div>
-            </a>
-
-            <!-- Book Details -->
-            <div class="info-wrap p-4">
-              <a :href="book.link" class="title text-gray-800">
-                <div class="fix-height">
-                  <h3 class="text-xl font-semibold">{{ book.title }}</h3>
-                  <div class="price-wrap my-2 flex justify-between">
-                    <div>
-                      <span class="price text-lg font-bold">₹{{ book.price }}</span>
-                      <del v-if="book.oldPrice" class="price-old text-sm text-gray-500 ml-2">₹{{ book.oldPrice }}</del>
-                    </div>
-                    <div v-if="book.discount" class="badge bg-green-100 text-green-700 px-2 py-1 rounded">
-                      {{ book.discount }}% off
-                    </div>
-                  </div>
-                  <p v-if="book.description" class="text-sm text-gray-600 mt-2">{{ book.description }}</p>
-                </div>
-                <div class="flex flex-col lg:flex-row justify-between items-center mt-3">
-                  <span class="text-sm text-gray-500">{{ book.timeAgo }}</span>
-                </div>
-              </a>
-            </div>
-          </div>
-        </figure>
-      </div>
-    </div>
-
-    <!-- Pagination -->
-    <nav class="mt-8">
-      <ul class="flex justify-center space-x-2">
-        <li><a href="#" class="px-4 py-2 bg-gray-200 rounded">«</a></li>
-        <li><a href="#" class="px-4 py-2 bg-blue-500 text-white rounded">1</a></li>
-        <li><a href="#" class="px-4 py-2 bg-gray-200 rounded">2</a></li>
-        <li><a href="#" class="px-4 py-2 bg-gray-200 rounded">3</a></li>
-        <li><a href="#" class="px-4 py-2 bg-gray-200 rounded">4</a></li>
-        <li><a href="#" class="px-4 py-2 bg-gray-200 rounded">5</a></li>
-        <li><span class="px-4 py-2">…</span></li>
-        <li><a href="#" class="px-4 py-2 bg-gray-200 rounded">3689</a></li>
-        <li><a href="#" class="px-4 py-2 bg-gray-200 rounded">»</a></li>
-      </ul>
-    </nav>
-  </div>
-</div>
- <!-- page-12 aboutus page -->
- <div class="pt-[32.5px] px-[15px] flex justify-between sm:flex-col xl:flex-row sm:h-[630px] xl:h-[259px]">
+  <!-- footer section -->
+  <div class="pt-[32.5px] px-[15px] flex justify-between sm:flex-col xl:flex-row sm:h-[630px] xl:h-[259px]">
               <!-- first -->
               <div class="pb-[6.5px] w-[291.5px] h-[208.9px] px-[9.7px]">
                 <h1 class="text-xl font-semibold text-neutral-400 pb-[13px]">ABOUT US</h1>
@@ -282,7 +173,7 @@
                
               </div>
              </div>
- <!-- page-13 -->
+ <!--  aboutus page -->
  <div class="pt-[16.5px]">
                 <div class="px-[15px]">
                   <!-- social links -->
@@ -372,46 +263,3 @@
                 </div>
               </div>
 </template>
-
-<script setup >
-
-  import { onMounted, ref } from 'vue'
-   
-    const isConditionOpen = ref(true);
-      const  isTypeOpen= ref(true);
-      const isCategoryOpen = ref(true);
-      const Allbook = ref([]);
-
-    
-   
-  
- 
-   const toggleAccordion=(section) => {
-      if (section === 'condition') {
-        isConditionOpen.value = !isConditionOpen.value;
-      } else if (section === 'type') {
-        isTypeOpen.value = !isTypeOpen.value;
-      } else if (section === 'category') {
-        isCategoryOpen.value = !isCategoryOpen.value;
-      }
-   
-  };
-
-  const fetchBookData = async () =>{
-
-try{
-
-  const response = await fetch("https://www.dbooks.org/api/recent", {
-    method: "GET",
-  credentials: "omit", // Prevents sending cookies
-  });
-  const data =await response.json();
-  Allbook.value = data.books
-  console.log(books.value)
-}
-catch(error){
-console.error("error fetched:",error);
-}
-}
-onMounted(fetchBookData);
-</script>
