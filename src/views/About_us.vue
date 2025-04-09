@@ -1,6 +1,8 @@
 <template>
-   <!-- Home.vue ki page-1 -->
-<div class="header xl:h-[110px] sm:h-[60px] fixed z-20 bg-white w-screen  px-4 flex ">
+<!-- header-section -->
+
+  <!-- Home.vue ki page-1 -->
+  <div class="header xl:h-[110px] sm:h-[60px] fixed z-20 bg-white w-screen  px-4 flex ">
     <div class="inner-header 2xl:mx-[19.5px] pl-2 w-screen flex flex-row items-center justify-between">
         
       <div class="clankart-img flex items-center justify-between xl:ml-[6.5px] 2xl:h-[55px] 2xl:w-[150px]  sm:h-[40px] xl:w-[120px] xl:h-[48px] xl:pl-2 2xl:mr-[32.5px] sm:mr-4">
@@ -36,212 +38,128 @@
       </div>
     </div>
   </div>
-  <!-- part-1 -->
-    <section class="pb-10 px-16 pt-[140px] bg-[#f7f8fa]">
-    <div class="container mx-auto">
-      <nav>
-        <!-- begin::breadcrumbs -->
-        <ol class="flex text-gray-600 text-sm font-semibold pb-3">
-          <li class="px-3">
-            <a href="/" class="pe-3 text-blue-600 hover:underline">Home</a>
-          </li>
-          <li class="px-3">
-            <a href="/books" class="pe-3 text-blue-600 hover:underline">Books</a>
-          </li>
-          <li class="px-3 text-gray-500">Used Books</li>
-        </ol>
-        <!-- end::breadcrumbs -->
-      </nav>
-      <h1 class="text-2xl font-semibold text-gray-800">
-        Find from over 1000s of used books online
-      </h1>
+    <!-- section-1 -->
+    <section class="pb-5 pt-[120px] bg-white flex justify-center items-center">
+    <div class="container px-md-0 ">
+      <img src="https://www.clankart.com/static-assets/about-us.jpg" class="max-w-full max-h-[350px]" alt="About Us">
     </div>
   </section>
-  <!--  -->
-   <!-- <div class="py-8 px-[30px]"></div> -->
-   <!-- part-2 -->
-    <div class="flex my-12">
-   <div class="card-body mx-5 border h-fit border-neutral-300 rounded-lg p-7">
-    <div class="overflow-y-auto" style="height: fit-content;">
-      <!-- Book Condition Filter -->
-      <div class="border-b pb-4">
-        <article class="border-0">
-          <!-- Header -->
-          <div class="accordion-header flex justify-between items-center cursor-pointer" @click="toggleAccordion('condition')">
-            <h3 class="text-primary font-semibold">Book Condition</h3>
-            <span class="transform transition-transform" :class="{ 'rotate-180': isConditionOpen }">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-              </svg>
-            </span>
-          </div>
-          <!-- Body -->
-          <div v-if="isConditionOpen" class="mt-2">
-            <form class="space-y-2">
-              <div class="flex items-center">
-                <input type="checkbox"  id="excellent" class="form-checkbox h-4 w-4 text-primary">
-                <label for="excellent" class="ml-2 text-sm">Excellent</label>
-              </div>
-              <div class="flex items-center">
-                <input type="checkbox" id="good" class="form-checkbox h-4 w-4 text-primary">
-                <label for="good" class="ml-2 text-sm">Good</label>
-              </div>
-              <div class="flex items-center">
-                <input type="checkbox" id="fair" class="form-checkbox h-4 w-4 text-primary">
-                <label for="fair" class="ml-2 text-sm">Fair</label>
-              </div>
-            </form>
-          </div>
-        </article>
+  <!-- aection-2 -->
+  <section class="py-12 bg-white pitch-deck flex justify-center items-center">
+    <div class="container">
+      <div class="text-center flex flex-col items-center">
+        <h1 class="text-4xl  font-serif">India's no. 1 platform to buy, sell used books for cash.</h1>
+        <h2 class="pt-5 text-2xl  text-neutral-600 w-fit  border-b  border-blue-400">Our story begins with you</h2>
       </div>
 
-      <!-- Book Type Filter -->
-      <div class="accordion border-b pb-4 mt-4">
-        <article class="accordion-item border-0">
-          <!-- Header -->
-          <div class="accordion-header flex justify-between items-center cursor-pointer" @click="toggleAccordion('type')">
-            <h3 class="text-primary font-semibold">Book Type</h3>
-            <span class="transform transition-transform" :class="{ 'rotate-180': isTypeOpen }">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-              </svg>
-            </span>
-          </div>
-          <!-- Body -->
-          <div v-if="isTypeOpen" class="mt-2">
-            <form class="space-y-2">
-              <div class="flex items-center">
-                <input type="checkbox" id="college" class="form-checkbox h-4 w-4 text-primary">
-                <label for="college" class="ml-2 text-sm">College Books (Higher Education Textbooks)</label>
-              </div>
-              <div class="flex items-center">
-                <input type="checkbox" id="exam_prep" class="form-checkbox h-4 w-4 text-primary">
-                <label for="exam_prep" class="ml-2 text-sm">Exam/Test Preparation Books</label>
-              </div>
-              <div class="flex items-center">
-                <input type="checkbox" id="reading" class="form-checkbox h-4 w-4 text-primary">
-                <label for="reading" class="ml-2 text-sm">Reading Books (Novels, Children, Business, Literature, History, etc.)</label>
-              </div>
-              <div class="flex items-center">
-                <input type="checkbox" id="school" class="form-checkbox h-4 w-4 text-primary">
-                <label for="school" class="ml-2 text-sm">School Books (up to 12th)</label>
-              </div>
-            </form>
-          </div>
-        </article>
+      <div class="py-5">
+        <h3 class="text-left text-xl  pb-2 font-semibold">A Student-to-Student Bookstore!</h3>
+        <p class="pt-0 text-lg text-neutral-700 font-semibold leading-relaxed">
+          Clankart (owned by 'Boolean Infotech Solutions') is all about you. Clankart is an intercommunity online 'student-to-student' bookstore that connects students to buy or sell used books by making it fast and easy for anyone to post a listing on the web. Sellers can easily earn some extra cash by simply posting used books that are no longer in use for them - thus, giving buyers the opportunity to find great value books at affordable price deals. Clankart is committed to creating a sustainable and eco-friendly approach to book exchanges. By giving used books a second life, we're reducing waste and promoting a more environmentally conscious student community.
+        </p>
+        <p class="fancy-font italic mt-4">
+          <mark>
+            <em>
+              "<a href='/post-ad' title='Sell your used books for cash' class="text-blue-600 underline">Selling used second-hand books</a> at your own desired price is not an uphill battle anymore. Just sell them on Clankart!"
+            </em>
+          </mark>
+        </p>
+        <p class="mt-4 text-neutral-700 font-semibold ">
+          Join the Clankart community and be part of a movement that's not only about affordable books but also about making a positive impact on the planet. 
+          <i class="bi bi-globe-americas text-green-600"></i>
+        </p>
       </div>
 
-      <!-- Book Category Filter -->
-      <div class="accordion border-b pb-4 mt-4">
-        <article class="accordion-item border-0">
-          <!-- Header -->
-          <div class="accordion-header flex justify-between items-center cursor-pointer" @click="toggleAccordion('category')">
-            <h3 class="text-primary font-semibold">Book Category</h3>
-            <span class="transform transition-transform" :class="{ 'rotate-180': isCategoryOpen }">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-              </svg>
-            </span>
-          </div>
-          <!-- Body -->
-          <div v-if="isCategoryOpen" class="mt-2">
-            <input type="text" class="w-full p-2 border rounded mb-4" placeholder="Search...">
-            <form class="space-y-2">
-              <div class="flex items-center">
-                <input type="checkbox" id="10th" class="form-checkbox h-4 w-4 text-primary">
-                <label for="10th" class="ml-2 text-sm">10th</label>
-              </div>
-              <div class="flex items-center">
-                <input type="checkbox" id="11th" class="form-checkbox h-4 w-4 text-primary">
-                <label for="11th" class="ml-2 text-sm">11th</label>
-              </div>
-              <div class="flex items-center">
-                <input type="checkbox" id="12th" class="form-checkbox h-4 w-4 text-primary">
-                <label for="12th" class="ml-2 text-sm">12th</label>
-              </div>
-              <!-- Add more categories as needed -->
-            </form>
-          </div>
-        </article>
+      <div class="mt-6">
+        <a href="/how-it-works" title="See how does it work for sellers and buyers" class="text-2xl text-blue-600 underline">See how does it work?</a>
+      </div>
+
+      <div class="pt-5 flex flex-wrap justify-center">
+        <iframe class="max-w-lg w-full px-2" height="315" src="https://www.youtube.com/embed/yEVy3WBGmh0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+        <iframe class="max-w-lg w-full px-2 mt-4 sm:mt-0" height="315" src="https://www.youtube.com/embed/Rwj6vi55hHw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
       </div>
     </div>
+  </section>
+<!-- section-3 -->
+<div class="w-full bg-white overflow-hidden box-border marquee-container">
+    <p class="inline-block w-full text-8xl font-extrabold marquee-text m-0 animate-marquee">
+      BUY. SELL. REUSE. REPEAT.
+    </p>
   </div>
-  <!--  -->
-  <div class="col-span-9 mx-7 adv-list-pane">
-    <!-- Header Section -->
-    <header class="pb-8">
-      <div class="flex flex-col md:flex-row justify-between items-center">
-        <div>
-          <h2 class="text-2xl font-bold">Buy Second Hand Books, Used Books Online In India</h2>
-        </div>
-        <select class="form-select w-auto text-dark">
-          <option selected disabled>Sort</option>
-          <option value="1">Newest First</option>
-          <option value="2">Price - Low to High</option>
-          <option value="3">Price - High to Low</option>
-        </select>
-      </div>
-    </header>
-
-    <!-- Book List Section -->
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-      <!-- Book Card -->
-      <div v-for="book in Allbook" :key="book.id" class="adv-card">
-        <figure class="card overlay card-product-grid">
-          <div class="flex flex-col">
-            <!-- Image Container -->
-            <a :href="book.link" class="col-12 col-md-12">
-              <div class="flex flex-center img-wrap overlay-wrapper relative h-48 sm:h-56">
-                <img class="lazy w-full h-full object-cover" :src="book.image" :alt="book.title" />
-                <button class="btn-wishlist btn-sm text-hover-danger absolute top-2 right-2">
-                  <i class="bi bi-heart"></i>
-                </button>
-              </div>
-            </a>
-
-            <!-- Book Details -->
-            <div class="info-wrap p-4">
-              <a :href="book.link" class="title text-gray-800">
-                <div class="fix-height">
-                  <h3 class="text-xl font-semibold">{{ book.title }}</h3>
-                  <div class="price-wrap my-2 flex justify-between">
-                    <div>
-                      <span class="price text-lg font-bold">₹{{ book.price }}</span>
-                      <del v-if="book.oldPrice" class="price-old text-sm text-gray-500 ml-2">₹{{ book.oldPrice }}</del>
-                    </div>
-                    <div v-if="book.discount" class="badge bg-green-100 text-green-700 px-2 py-1 rounded">
-                      {{ book.discount }}% off
-                    </div>
-                  </div>
-                  <p v-if="book.description" class="text-sm text-gray-600 mt-2">{{ book.description }}</p>
-                </div>
-                <div class="flex flex-col lg:flex-row justify-between items-center mt-3">
-                  <span class="text-sm text-gray-500">{{ book.timeAgo }}</span>
-                </div>
-              </a>
+  <!-- section-4 -->
+  <section class="py-12 bg-white">
+    <div class="container mx-auto">
+      <div class="border-l-4 border-blue-500 bg-blue-50">
+        <div class="flex flex-col md:flex-row items-center justify-around py-10 px-5 ">
+          <div class="flex items-center">
+            <span class="me-5 ">
+              <svg  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <rect opacity="0.3" x="2" y="2" width="20" height="20" rx="10" fill="black"></rect>
+                <rect x="11" y="14" width="7" height="2" rx="1" transform="rotate(-90 11 14)" fill="black"></rect>
+                <rect x="11" y="17" width="2" height="2" rx="1" transform="rotate(-90 11 17)" fill="black"></rect>
+              </svg>
+            </span>
+            <div>
+              <span class="text-lg text-gray-700 font-light">
+                If you've got any suggestions or questions, don't hesitate to drop us a note at 
+                <a href="mailto:support@clankart.com" class="text-blue-500 font-semibold">support@clankart.com</a>
+              </span>
             </div>
           </div>
-        </figure>
+        </div>
       </div>
     </div>
-
-    <!-- Pagination -->
-    <nav class="mt-8">
-      <ul class="flex justify-center space-x-2">
-        <li><a href="#" class="px-4 py-2 bg-gray-200 rounded">«</a></li>
-        <li><a href="#" class="px-4 py-2 bg-blue-500 text-white rounded">1</a></li>
-        <li><a href="#" class="px-4 py-2 bg-gray-200 rounded">2</a></li>
-        <li><a href="#" class="px-4 py-2 bg-gray-200 rounded">3</a></li>
-        <li><a href="#" class="px-4 py-2 bg-gray-200 rounded">4</a></li>
-        <li><a href="#" class="px-4 py-2 bg-gray-200 rounded">5</a></li>
-        <li><span class="px-4 py-2">…</span></li>
-        <li><a href="#" class="px-4 py-2 bg-gray-200 rounded">3689</a></li>
-        <li><a href="#" class="px-4 py-2 bg-gray-200 rounded">»</a></li>
+  </section>
+  <!-- section-5 -->
+  <section class="py-12 bg-white">
+    <div class="container mx-auto">
+      <p class="text-center text-4xl font-bold">Follow us on Social Media</p>
+      
+      <ul class="flex flex-wrap justify-center mt-10">
+        <li v-for="social in socials" :key="social.name" class="w-full sm:w-1/4 text-center font-bold py-5">
+          <div class="flex items-center justify-center">
+            <a :href="social.link" target="_blank" rel="noopener noreferrer" class="flex items-center">
+              <img :src="social.icon" class="w-12 h-12 bg-transparent" :alt="`Clankart on ${social.name}`" />
+              <div class="ml-2 text-lg text-left text-blue-500">
+                {{ social.name }}
+                <span class="block text-gray-500 font-semibold">{{ social.handle }}</span>
+              </div>
+            </a>
+          </div>
+        </li>
       </ul>
-    </nav>
+    </div>
+  </section>
+  <!-- section-6 -->
+  <section class="py-12 bg-gray-100">
+    <div class="container mx-auto">
+      <p class="text-center text-4xl font-semibold">Clankart Featured On</p>
+      
+      <ul class="flex flex-wrap justify-center mt-8">
+        <li v-for="feature in features" :key="feature" class="w-full sm:w-1/4 text-center text-neutral-500 font-semibold py-5">
+          <p class="text-2xl">{{ feature }}</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <!-- section-7 -->
+  <div class="bg-gray-100 ">
+    <!-- Desktop Image -->
+    <img 
+      src="https://www.clankart.com/static-assets/about-us-footer.png" 
+      alt="save the planet" 
+      class="hidden md:block w-full"
+    >
+    <!-- Mobile Image -->
+    <img 
+      src="https://www.clankart.com/static-assets/about-us-footer-m.png" 
+      alt="save the planet" 
+      class="block md:hidden w-full"
+    >
   </div>
-</div>
- <!-- page-12 aboutus page -->
+  <!-- section-8 -->
+    <!-- page-12 aboutus page -->
  <div class="pt-[32.5px] px-[15px] flex justify-between sm:flex-col xl:flex-row sm:h-[630px] xl:h-[259px]">
               <!-- first -->
               <div class="pb-[6.5px] w-[291.5px] h-[208.9px] px-[9.7px]">
@@ -282,7 +200,7 @@
                
               </div>
              </div>
- <!-- page-13 -->
+ <!-- page-13 aboutus page -->
  <div class="pt-[16.5px]">
                 <div class="px-[15px]">
                   <!-- social links -->
@@ -373,45 +291,27 @@
               </div>
 </template>
 
-<script setup >
+<script setup>
+import { ref } from 'vue';
 
-  import { onMounted, ref } from 'vue'
-   
-    const isConditionOpen = ref(true);
-      const  isTypeOpen= ref(true);
-      const isCategoryOpen = ref(true);
-      const Allbook = ref([]);
+const socials = ref([
+{ name: "Facebook", link: "https://www.facebook.com/clankart", icon: "https://www.clankart.com/static-assets/facebook.png", handle: "@clankart" },
+        { name: "Instagram", link: "https://www.instagram.com/clankart", icon: "https://www.clankart.com/static-assets/instagram.png", handle: "@clankart" },
+        { name: "YouTube", link: "https://www.youtube.com/@clankart", icon: "https://www.clankart.com/static-assets/youtube.png", handle: "@clankart" },
+        { name: "Twitter", link: "https://twitter.com/clankartTeam", icon: "https://www.clankart.com/static-assets/twitter.png", handle: "@clankartTeam" },
+]);
 
-    
-   
-  
- 
-   const toggleAccordion=(section) => {
-      if (section === 'condition') {
-        isConditionOpen.value = !isConditionOpen.value;
-      } else if (section === 'type') {
-        isTypeOpen.value = !isTypeOpen.value;
-      } else if (section === 'category') {
-        isCategoryOpen.value = !isCategoryOpen.value;
-      }
-   
-  };
-
-  const fetchBookData = async () =>{
-
-try{
-
-  const response = await fetch("https://www.dbooks.org/api/recent", {
-    method: "GET",
-  credentials: "omit", // Prevents sending cookies
-  });
-  const data =await response.json();
-  Allbook.value = data.books
-  console.log(books.value)
-}
-catch(error){
-console.error("error fetched:",error);
-}
-}
-onMounted(fetchBookData);
+const features = ref(["NextBigWhat", "LaunchingNext", "Starter Story", "StartUpFreak"])
 </script>
+<style scoped>
+@keyframes marquee {
+    0%{transform: translateX(100%);}
+    100%{transform: translateX(-100%);}
+}
+
+.animate-marquee{
+    display: inline-block;
+    white-space: nowrap;
+    animation: marquee 10s linear infinite;
+}
+</style>

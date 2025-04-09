@@ -1,14 +1,14 @@
 <template>
-   <!-- Home.vue ki page-1 -->
-<div class="header xl:h-[110px] sm:h-[60px] fixed z-20 bg-white w-screen  px-4 flex ">
-    <div class="inner-header 2xl:mx-[19.5px] pl-2 w-screen flex flex-row items-center justify-between">
+      <!-- common header  -->
+   <div class="header xl:h-[110px] shadow-lg sm:h-[60px] fixed z-20 bg-white w-screen  px-4 flex ">
+    <div class="inner-header 2xl:mx-[19.5px] pl-2 w-screen flex flex-row items-center sm:justify-between xl:justify-center">
         
       <div class="clankart-img flex items-center justify-between xl:ml-[6.5px] 2xl:h-[55px] 2xl:w-[150px]  sm:h-[40px] xl:w-[120px] xl:h-[48px] xl:pl-2 2xl:mr-[32.5px] sm:mr-4">
        <!-- hamburger -->
        <div class="sm:flex xl:hidden sm:pl-[6px]">
             <i class="text-xl fa-solid fa-bars"></i>
         </div>
-        <a href="/" class="py-[5.7px] pl-4 ">
+        <a href="/" class="py-[5.7px] pl-4 xl:pr-4">
           <img class="2xl:w-[150px] 2xl:h-[55px] sm:w-[120px] sm:h-[48px] " width="150" height="55" src="https://www.clankart.com/user-uploads/static-assets/logo.png"/>
         </a>
       </div>
@@ -19,12 +19,13 @@
         <button class="bg-[#0083ca] px-[20.5px] py-[10.7px] text-white text-lg">Search</button>
        
     </div>
-     <div class=" yellow-button ">
+    <!-- buttons -->
+     <div class=" yellow-button xl:pr-18 ">
         <button class="px-[9.7px] py-[10.7px] sm:hidden 2xl:flex border border-[#e1b70d] bg-[#fcec52] h-[47px] w-[150px] rounded-sm ">Sell Used Books</button>
         <button class="px-[9.7px] py-[10.7px] border sm:flex 2xl:hidden border-[#e1b70d] bg-[#fcec52] h-[47px] w-[100px] justify-center items-center text-2xl rounded-sm ">+SELL</button>
     </div>
       </div>
-    
+    <!-- cart and account -->
       <div class="account-and-cart-button text-sm flex sm:hidden 2xl:flex text-[#5b5b5b]">
         <button class="mr-[16.2px] text-center"><i class="text-lg fa-solid fa-user"></i><br/><span class="">Account</span></button>
         <button class="flex flex-col text-sm"><i class="text-lg fa-solid fa-cart-shopping"></i><span>Cart</span></button>
@@ -36,213 +37,131 @@
       </div>
     </div>
   </div>
-  <!-- part-1 -->
-    <section class="pb-10 px-16 pt-[140px] bg-[#f7f8fa]">
-    <div class="container mx-auto">
-      <nav>
-        <!-- begin::breadcrumbs -->
-        <ol class="flex text-gray-600 text-sm font-semibold pb-3">
-          <li class="px-3">
-            <a href="/" class="pe-3 text-blue-600 hover:underline">Home</a>
-          </li>
-          <li class="px-3">
-            <a href="/books" class="pe-3 text-blue-600 hover:underline">Books</a>
-          </li>
-          <li class="px-3 text-gray-500">Used Books</li>
-        </ol>
-        <!-- end::breadcrumbs -->
-      </nav>
-      <h1 class="text-2xl font-semibold text-gray-800">
-        Find from over 1000s of used books online
-      </h1>
+    <!-- medium section -->
+      <section class="pb-12 pt-[140px] bg-white">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-8">
+        <h1 class="text-2xl font-semibold text-gray-900 mb-2">Listing Policy</h1>
+        <h2 class="text-xl font-semibold text-gray-800">Prohibited Items Policy</h2>
+        <p class="mt-4 text-gray-800 text-sm">
+          For use of our Site and other services, you confirm and declare that you shall not list or post or provide information in relation to the sale or purchase or exchange of goods and services, content or information that are illegal under the laws of the Republic of India and/or are not permitted as per the prohibited items policy listed below.
+        </p>
+      </div>
+
+      <div class=" py-4 mb-8">
+        <h3 class="text-lg font-medium text-gray-800">
+          Clankart allows users to list only used books on our platform. Ensure that your listing complies with this policy. Listings for new books, e-books, or any other non-book items will be removed.
+        </h3>
+      </div>
+
+      <ul class="space-y-8">
+        <li class="">
+          <h3 class="text-xl font-semibold text-gray-600 mb-4">1. Book Listing Policy:</h3>
+          <ul class="space-y-2 pl-6 list-disc">
+            <li>
+              <span class="font-medium">Nature of Books:</span> By listing a book on Clankart, you confirm that you have purchased that book, either online or offline, from a legitimate source. Users are not allowed to list new books, counterfeit items, institution materials or any form of reproductions.
+            </li>
+            <li>
+              <span class="font-medium">No Photocopied Books:</span> Users are strictly prohibited from listing photocopied or duplicated versions of books. All listed items must be original copies.
+            </li>
+            <li>
+              <span class="font-medium">No E-books:</span> Users are strictly prohibited from listing e-books for sale.
+            </li>
+            <li>
+              <span class="font-medium">No Human or Objectionable Images:</span> Photos uploaded for book ads should focus solely on the book and its condition. Do not include images that feature humans, explicit content, or anything that may be considered objectionable.
+            </li>
+            <li>
+              <span class="font-medium">Accuracy of Listing:</span> The details provided in your listing, including book condition, edition, and other relevant information, must be accurate and truthful.
+            </li>
+            <li>
+              <span class="font-medium">Personal/Non-Commercial Listings Only:</span> Clankart is a marketplace designed for individual users to buy and sell their personally owned used books. Listings that appear to be posted by dealers, shopkeepers, or for business purposes will be reviewed and may be removed if they do not align with our policy.
+            </li>
+          </ul>
+        </li>
+
+        <li>
+          <h3 class="text-xl font-semibold text-gray-600 mb-4">2. Prohibited Items Policy.</h3>
+          <h4 class="font-medium text-gray-700 mb-2">A. We specifically prohibit any listing or posting of classifieds or information in relation to the following items:</h4>
+          <ul class="space-y-3 pl-6 list-disc text-md">
+            <li>Alcoholic Beverages, Liquor, tobacco products, drugs, psychotropic substances, narcotics, intoxicants of any description, medicines, palliative/curative substances nor shall you provide link directly or indirectly to or include descriptions of items, goods or services that are prohibited under any applicable law for the time being in force including but not limited to the Drugs and Cosmetics Act, 1940, the Drugs And Magic Remedies (Objectionable Advertisements) Act, 1954 Narcotic Drug and Prohibited Substances Act and the Indian Penal Code, 1860.</li>
+            <li>Living, dead person and/or the whole or any part of any human which has been kept or preserved by any means whether artificial or natural including any blood, bodily fluids and/ or body parts</li>
+            <li>Prostitution or any other service in the nature there of that purports to violate the provisions of Immoral Act or Indecent representation of women which violates the contemporary standards of morality and decency in Indian society.</li>
+            <li>Religious items, including books, artifacts, etc. or any information, description of any such item that is likely to affect the religious sentiments of any person or group</li>
+            <li>Mature Audiences Policy includes films which do not have a certificate for public exhibition issued by the Central Board of Film Certification and or described and depict or otherwise deal with matters which are revolting or repulsive and or tend to deprave a persons mind in such a way that they tend to offend against the standards of morality, decency and propriety generally accepted by reasonable adults</li>
+            <li>Obscene Items includes items which contain an indecent representation of women within the meaning of the Indecent Representation of Women (Prohibition) Act, 1986; Any publication or film or item that describes or depicts a minor who is, or who appears to be, under 18 (whether the minor is engaged in sexual activity or not) and any computer games not suitable for minor that are unsuitable for a minor to see or play.</li>
+            <li>Offensive Material intended for use in a sexual setting (including "bondage" and "fetish" items,) displaying sexual activity or portraying human genitalia in a "life-like" or realistic fashion</li>
+            <li>"Antiquities" and "Art Treasures" in violation of the provisions of the Antiquities and Art Treasures Act, 1972 ("the Act")</li>
+            <li>Information or items that are defamatory, libelous, threatening or abusive in nature</li>
+            <li>Information that is fraudulent, misrepresenting as to the nature and use of the goods or the services.</li>
+            <li>Counterfeit, Pirated and stolen goods or unauthorized illegal services (services for which you are not licensed or permitted to do or do not have the authority to under take).</li>
+            <li>Items, goods and services that infringe or attempt to pass off any third parties intellectual property or rights of publicity or moral rights and or purport's to breach any persons right to privacy.</li>
+            <li>Electronically transmitting through any medium computer viruses of any type or any computer program that facilitates hacking of a computer system which the intent to damage a computer or computer network or intercept any personal data.</li>
+            <li>Your information shall not include any hate content, that is derogatory or slanderous in nature that may directed to any individual or group or advocate violence against any users individuals and or animals.</li>
+            <li>Hazardous chemicals and pesticides and/ or items in violation of Hazardous Chemicals Act, 1985.</li>
+            <li>Fireworks, Destructive Devices and Explosives including any material that enables the making of fireworks, explosive triggers and explosive devices.</li>
+            <li>Identity Documents, Personal Financial Records & Personal Information (in any form, including mailing lists)</li>
+            <li>Lottery Tickets, Sweepstakes Entries and Slot Machines</li>
+            <li>Items in violation of the Food Adulteration Act, 1954</li>
+            <li>Military or Police Badges, Uniforms, coats-of-arms and or any Government emblems, insignia, and/ or items in violation of Emblems and names (Prevention of improper use) Act, 1950 and/ or Flag Codes of India Act, 2002</li>
+            <li>Weapons and related items ( such as firearms, firearm parts and magazines, ammunition, tear gas, stun guns, switchblade knives or any other item which is prohibited under the Indian Arms Act, 1959.</li>
+            <li>"Pyramid schemes" and "Multilevel Marketing" and/ or similar scams which are solely listed for the purpose of defrauding users.</li>
+            <li>Spam, abusive, duplicate, listing, fraud schemes (e.g. "Get rich quick" "work at homes" scams which are solely listed for the purpose of duping users)</li>
+            <li>Inappropriate, Wrong Category (e.g 10th class book listed under college book section).</li>
+            <li>Incorrect City / Location of Listing (listing allowed only in the city you are based in, of listing)</li>
+            <li>International Listings.</li>
+            <li>is harmful to children.</li>
+            <li>infringes any patent, trademark, copyright or other proprietary rights.</li>
+            <li>violates any law for the time being in force;</li>
+            <li>deceives or misleads the addressee about the origin of the message or knowingly and intentionally communicates any information which is patently false or misleading in nature but may reasonably be perceived as a fact</li>
+            <li>impersonates another person.</li>
+            <li>threatens the unity, integrity, defence, security or sovereignty of India, friendly relations with foreign States, or public order, or causes incitement to the commission of any cognisable offence or prevents investigation of any offence or is insulting other nation.</li>
+            <li>contains software virus or any other computer code, file or program designed to interrupt, destroy or limit the functionality of any computer resource.</li>
+            <li>is patently false and untrue, and is written or published in any form, with the intent to mislead or harass a person, entity or agency for financial gain or to cause any injury to any person.</li>
+           
+          </ul>
+
+          <h4 class="font-medium text-gray-600 mt-6 mb-2">B. Without prejudice to the generality of the above, Clankart does not permit posting or listing of classifieds in relation to the following:</h4>
+          <ul class="space-y-3 pl-6 list-disc">
+            <li>"Securities" within the meaning of the Securities Contract Regulation Act, 1956, including shares, bonds, debentures, etc. and/or any other financial instruments/assets of any description</li>
+            <li>Living, dead creatures and/or the whole or any part of any animal which has been kept or preserved by any means whether artificial or natural including rugs, skins, specimens of animals, antlers, horns, hair, feathers, nails, teeth, musk, eggs, nests, other animal products of any description the sale and purchase of which is prevented or restricted in any manner by applicable laws (including those prohibited under The Wildlife Protection Act, 1972 and/ or The Environment Protection Act, 1986)</li>
+          </ul>
+
+          <h4 class="font-medium text-gray-700 mt-6 mb-2">C. Your listing, information, Advertisement</h4>
+          <ul class="space-y-3 pl-6 list-disc text-[#181c32]">
+            <li>Shall not be defamatory, trade libelous, unlawfully threatening or unlawfully harassing.</li>
+            <li>Shall not contain any viruses, Trojan horses, worms, time bombs, cancel bots, easter eggs or other computer programming routines that may damage systems.</li>
+            <li>Shall not be allowed to libel anyone or include hate, derogatory, slanderous speech directed at individuals or groups.</li>
+          </ul>
+        </li>
+
+        <li>
+          <h3 class="text-xl font-semibold text-gray-600 mb-4">3. In addition to the above and for the purposes of clarity all Users shall be expected to adhere to and comply with the following Policies while listing of items:</h3>
+          <ul class="space-y-4 pl-6 list-disc text-[#181c32]">
+            <li><span class="font-medium text-black">Restricted Item Policy:</span>   In addition to the above prohibited items policy users shall also adhere to and comply with the restricted items policy while listing, posting or providing information in relation to any goods or services.</li>
+            <li ><span class="font-medium text-black">Duplicate Ad listings are not allowed.</span>  Any ad posted more than once with the same content or Title in the same city and category would be considered as a Duplicate Ad. We advise you to post multiple ads only if you have different items or services for sale. All duplicate ads would be deleted and posters penalized if the problem persists.</li>
+            <li><span class="font-medium text-black">Mature Audience/Sexually oriented material:</span>   Classifieds relating to items that includes items intended for use in sexual activity would not be permitted. (An example of such classifieds relating to an item not normally permitted would be a classified for the sale of a vibrator). Please also be aware that titles with graphic adult language are inappropriate, regardless of the item contained in the listing itself.</li>
+          </ul>
+        </li>
+
+        <li>
+            <!-- Consequences of Breach of Listing Policy -->
+          <h3 class="text-xl font-semibold text-gray-600 mb-4">4. Consequences of Breach of Listing Policy</h3>
+          <ul class="space-y-3 pl-6 list-disc">
+            <li>
+              <span class="font-medium text-black">Users who violate the prohibited items policy may be subject to the following actions:</span>
+              <ul class="mt-2 space-y-2 pl-6 text-[#181c32] list-disc">
+                <li>Suspension or termination of membership.</li>
+                <li>Permanent blocking of access to the site.</li>
+                <li>Reporting to Law Enforcement or Appropriate Authorities.</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
     </div>
   </section>
-  <!--  -->
-   <!-- <div class="py-8 px-[30px]"></div> -->
-   <!-- part-2 -->
-    <div class="flex my-12">
-   <div class="card-body mx-5 border h-fit border-neutral-300 rounded-lg p-7">
-    <div class="overflow-y-auto" style="height: fit-content;">
-      <!-- Book Condition Filter -->
-      <div class="border-b pb-4">
-        <article class="border-0">
-          <!-- Header -->
-          <div class="accordion-header flex justify-between items-center cursor-pointer" @click="toggleAccordion('condition')">
-            <h3 class="text-primary font-semibold">Book Condition</h3>
-            <span class="transform transition-transform" :class="{ 'rotate-180': isConditionOpen }">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-              </svg>
-            </span>
-          </div>
-          <!-- Body -->
-          <div v-if="isConditionOpen" class="mt-2">
-            <form class="space-y-2">
-              <div class="flex items-center">
-                <input type="checkbox"  id="excellent" class="form-checkbox h-4 w-4 text-primary">
-                <label for="excellent" class="ml-2 text-sm">Excellent</label>
-              </div>
-              <div class="flex items-center">
-                <input type="checkbox" id="good" class="form-checkbox h-4 w-4 text-primary">
-                <label for="good" class="ml-2 text-sm">Good</label>
-              </div>
-              <div class="flex items-center">
-                <input type="checkbox" id="fair" class="form-checkbox h-4 w-4 text-primary">
-                <label for="fair" class="ml-2 text-sm">Fair</label>
-              </div>
-            </form>
-          </div>
-        </article>
-      </div>
-
-      <!-- Book Type Filter -->
-      <div class="accordion border-b pb-4 mt-4">
-        <article class="accordion-item border-0">
-          <!-- Header -->
-          <div class="accordion-header flex justify-between items-center cursor-pointer" @click="toggleAccordion('type')">
-            <h3 class="text-primary font-semibold">Book Type</h3>
-            <span class="transform transition-transform" :class="{ 'rotate-180': isTypeOpen }">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-              </svg>
-            </span>
-          </div>
-          <!-- Body -->
-          <div v-if="isTypeOpen" class="mt-2">
-            <form class="space-y-2">
-              <div class="flex items-center">
-                <input type="checkbox" id="college" class="form-checkbox h-4 w-4 text-primary">
-                <label for="college" class="ml-2 text-sm">College Books (Higher Education Textbooks)</label>
-              </div>
-              <div class="flex items-center">
-                <input type="checkbox" id="exam_prep" class="form-checkbox h-4 w-4 text-primary">
-                <label for="exam_prep" class="ml-2 text-sm">Exam/Test Preparation Books</label>
-              </div>
-              <div class="flex items-center">
-                <input type="checkbox" id="reading" class="form-checkbox h-4 w-4 text-primary">
-                <label for="reading" class="ml-2 text-sm">Reading Books (Novels, Children, Business, Literature, History, etc.)</label>
-              </div>
-              <div class="flex items-center">
-                <input type="checkbox" id="school" class="form-checkbox h-4 w-4 text-primary">
-                <label for="school" class="ml-2 text-sm">School Books (up to 12th)</label>
-              </div>
-            </form>
-          </div>
-        </article>
-      </div>
-
-      <!-- Book Category Filter -->
-      <div class="accordion border-b pb-4 mt-4">
-        <article class="accordion-item border-0">
-          <!-- Header -->
-          <div class="accordion-header flex justify-between items-center cursor-pointer" @click="toggleAccordion('category')">
-            <h3 class="text-primary font-semibold">Book Category</h3>
-            <span class="transform transition-transform" :class="{ 'rotate-180': isCategoryOpen }">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-              </svg>
-            </span>
-          </div>
-          <!-- Body -->
-          <div v-if="isCategoryOpen" class="mt-2">
-            <input type="text" class="w-full p-2 border rounded mb-4" placeholder="Search...">
-            <form class="space-y-2">
-              <div class="flex items-center">
-                <input type="checkbox" id="10th" class="form-checkbox h-4 w-4 text-primary">
-                <label for="10th" class="ml-2 text-sm">10th</label>
-              </div>
-              <div class="flex items-center">
-                <input type="checkbox" id="11th" class="form-checkbox h-4 w-4 text-primary">
-                <label for="11th" class="ml-2 text-sm">11th</label>
-              </div>
-              <div class="flex items-center">
-                <input type="checkbox" id="12th" class="form-checkbox h-4 w-4 text-primary">
-                <label for="12th" class="ml-2 text-sm">12th</label>
-              </div>
-              <!-- Add more categories as needed -->
-            </form>
-          </div>
-        </article>
-      </div>
-    </div>
-  </div>
-  <!--  -->
-  <div class="col-span-9 mx-7 adv-list-pane">
-    <!-- Header Section -->
-    <header class="pb-8">
-      <div class="flex flex-col md:flex-row justify-between items-center">
-        <div>
-          <h2 class="text-2xl font-bold">Buy Second Hand Books, Used Books Online In India</h2>
-        </div>
-        <select class="form-select w-auto text-dark">
-          <option selected disabled>Sort</option>
-          <option value="1">Newest First</option>
-          <option value="2">Price - Low to High</option>
-          <option value="3">Price - High to Low</option>
-        </select>
-      </div>
-    </header>
-
-    <!-- Book List Section -->
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-      <!-- Book Card -->
-      <div v-for="book in Allbook" :key="book.id" class="adv-card">
-        <figure class="card overlay card-product-grid">
-          <div class="flex flex-col">
-            <!-- Image Container -->
-            <a :href="book.link" class="col-12 col-md-12">
-              <div class="flex flex-center img-wrap overlay-wrapper relative h-48 sm:h-56">
-                <img class="lazy w-full h-full object-cover" :src="book.image" :alt="book.title" />
-                <button class="btn-wishlist btn-sm text-hover-danger absolute top-2 right-2">
-                  <i class="bi bi-heart"></i>
-                </button>
-              </div>
-            </a>
-
-            <!-- Book Details -->
-            <div class="info-wrap p-4">
-              <a :href="book.link" class="title text-gray-800">
-                <div class="fix-height">
-                  <h3 class="text-xl font-semibold">{{ book.title }}</h3>
-                  <div class="price-wrap my-2 flex justify-between">
-                    <div>
-                      <span class="price text-lg font-bold">₹{{ book.price }}</span>
-                      <del v-if="book.oldPrice" class="price-old text-sm text-gray-500 ml-2">₹{{ book.oldPrice }}</del>
-                    </div>
-                    <div v-if="book.discount" class="badge bg-green-100 text-green-700 px-2 py-1 rounded">
-                      {{ book.discount }}% off
-                    </div>
-                  </div>
-                  <p v-if="book.description" class="text-sm text-gray-600 mt-2">{{ book.description }}</p>
-                </div>
-                <div class="flex flex-col lg:flex-row justify-between items-center mt-3">
-                  <span class="text-sm text-gray-500">{{ book.timeAgo }}</span>
-                </div>
-              </a>
-            </div>
-          </div>
-        </figure>
-      </div>
-    </div>
-
-    <!-- Pagination -->
-    <nav class="mt-8">
-      <ul class="flex justify-center space-x-2">
-        <li><a href="#" class="px-4 py-2 bg-gray-200 rounded">«</a></li>
-        <li><a href="#" class="px-4 py-2 bg-blue-500 text-white rounded">1</a></li>
-        <li><a href="#" class="px-4 py-2 bg-gray-200 rounded">2</a></li>
-        <li><a href="#" class="px-4 py-2 bg-gray-200 rounded">3</a></li>
-        <li><a href="#" class="px-4 py-2 bg-gray-200 rounded">4</a></li>
-        <li><a href="#" class="px-4 py-2 bg-gray-200 rounded">5</a></li>
-        <li><span class="px-4 py-2">…</span></li>
-        <li><a href="#" class="px-4 py-2 bg-gray-200 rounded">3689</a></li>
-        <li><a href="#" class="px-4 py-2 bg-gray-200 rounded">»</a></li>
-      </ul>
-    </nav>
-  </div>
-</div>
- <!-- page-12 aboutus page -->
- <div class="pt-[32.5px] px-[15px] flex justify-between sm:flex-col xl:flex-row sm:h-[630px] xl:h-[259px]">
+      <!-- footer section -->
+      <div class="pt-[32.5px] px-[15px] flex justify-between sm:flex-col xl:flex-row sm:h-[630px] xl:h-[259px]">
               <!-- first -->
               <div class="pb-[6.5px] w-[291.5px] h-[208.9px] px-[9.7px]">
                 <h1 class="text-xl font-semibold text-neutral-400 pb-[13px]">ABOUT US</h1>
@@ -282,7 +201,7 @@
                
               </div>
              </div>
- <!-- page-13 -->
+ <!--  aboutus page -->
  <div class="pt-[16.5px]">
                 <div class="px-[15px]">
                   <!-- social links -->
@@ -372,46 +291,3 @@
                 </div>
               </div>
 </template>
-
-<script setup >
-
-  import { onMounted, ref } from 'vue'
-   
-    const isConditionOpen = ref(true);
-      const  isTypeOpen= ref(true);
-      const isCategoryOpen = ref(true);
-      const Allbook = ref([]);
-
-    
-   
-  
- 
-   const toggleAccordion=(section) => {
-      if (section === 'condition') {
-        isConditionOpen.value = !isConditionOpen.value;
-      } else if (section === 'type') {
-        isTypeOpen.value = !isTypeOpen.value;
-      } else if (section === 'category') {
-        isCategoryOpen.value = !isCategoryOpen.value;
-      }
-   
-  };
-
-  const fetchBookData = async () =>{
-
-try{
-
-  const response = await fetch("https://www.dbooks.org/api/recent", {
-    method: "GET",
-  credentials: "omit", // Prevents sending cookies
-  });
-  const data =await response.json();
-  Allbook.value = data.books
-  console.log(books.value)
-}
-catch(error){
-console.error("error fetched:",error);
-}
-}
-onMounted(fetchBookData);
-</script>
