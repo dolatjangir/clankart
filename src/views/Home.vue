@@ -1,7 +1,7 @@
 <template>
 <div>
   <!-- page-1 -->
-<div class="header xl:h-[110px] sm:h-[60px] fixed bg-white z-20 w-screen   flex ">
+<div class="header xl:h-[110px] sm:h-[60px] fixed bg-white z-20 w-screen   flex ">  
     <div class="inner-header 2xl:mx-[19.5px] pl-2 w-screen flex flex-row items-center justify-between">
         
       <div class="clankart-img flex items-center justify-between xl:ml-[6.5px] 2xl:h-[55px] 2xl:w-[150px]  sm:h-[40px] xl:w-[120px] xl:h-[48px] xl:pl-2 2xl:mr-[32.5px] sm:mr-4">
@@ -88,19 +88,24 @@
           <div class="animate-scroll transition-all flex whitespace-nowrap space-x-2 ">
           <!-- 1 -->
           <div v-for="book in books" :key="book.id" class="first w-[218px] flex-shrink-0">
+            <RouterLink to = "/page1">
             <img class="w-[218px] rounded-sm h-[149px]" :src="book.image" alt="book img"/>
             <div class="py-[13px]">
               <p class="mb-[6.5px]  overflow-hidden text-ellipsis">{{ book.title }}</p>
               <p class="price my-[6.5px]">₹1500</p>
               <div class="flex  justify-end">
               <button class="bg-[#0083ca] text-white rounded-sm  px-[17.2px] py-[8.15px]">Buy Now</button>
-            </div></div>
+            </div>
+          </div>
+        </RouterLink>
           </div>
            
         </div>
         </div>
         <div class="flex justify-center pt-4">
+          <RouterLink to="/books/view-all">
         <button class="border px-[20.5px] py-[10.7px] rounded-sm border-[#fcec52] text-center  bg-[#fcec52]">Explore all used Books</button>
+      </RouterLink>
       </div>
       </div>
     </div>
@@ -548,6 +553,8 @@
 <script setup>
 import {ref,onMounted} from "vue";
 import { RouterLink } from "vue-router";
+// const route = useRoute();
+// console.log("route",route);
 // import axios from "axios";
 const books = ref([]);
 console.log("dj")
