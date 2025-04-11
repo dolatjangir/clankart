@@ -145,6 +145,7 @@
                       maxlength="13"
                     >
                     <button 
+                    @click="popup = true"
                       type="button" 
                       class="px-4 py-1 sm:py-2 bg-blue-500 text-white text-sm rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 whitespace-nowrap"
                     >
@@ -294,7 +295,7 @@
               <div class="card border border-gray-200 rounded-lg">
                 <div class="card-header px-5 py-3 bg-gray-50 rounded-t-lg cursor-pointer flex justify-between items-center">
                   <h3 class="text-lg font-bold text-gray-800">Your Details:</h3>
-                  <i class="fas fa-chevron-down text-gray-500 transition-transform duration-200"></i>
+                  <i @click="popup = true" class="fas fa-chevron-down text-gray-500 transition-transform duration-200"></i>
                 </div>
                 
                 <div class="card-body px-5 py-4">
@@ -371,7 +372,9 @@
             
             <!-- Submit Button -->
             <div class="text-center sm:text-left pt-4">
+             
               <button 
+            
                 type="submit" 
                 class="px-8 py-2 bg-yellow-300 text-gray-800 font-medium rounded-md hover:bg-yellow-400 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:ring-offset-2 transition-colors"
               >
@@ -392,12 +395,11 @@
   </template>
   
   <script setup>
+ 
   import { onMounted, ref } from 'vue'
   const popup = ref(false);
   const close = ref(true);
- const closebutton = () =>{
-  close.value = !close.value
- }
+
   onMounted(()=>{
     setTimeout(()=>{
         popup.value = true

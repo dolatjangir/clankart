@@ -55,8 +55,10 @@
         <div class="bg-[#fff2c7] w-[175px] h-[150px] relative right-1 rounded-lg">
           <div class=" py-[32.5px] px-[32.5px]">
           <img class="w-[100px] h-[55px]" src="https://www.clankart.com/static-assets/hand-money.svg"/>
+          <RouterLink to="/post-ad">
           <button class="text-[#0083ca] bg-[#f1faff] hover:bg-[#0083ca] hover:text-white tracking-tighter text-xs rounded-sm w-[100px] font-semibold px-[9.7px] py-[8.1px] mt-[9.7px]">Sell old Books</button>
-        </div>
+        </RouterLink>
+      </div>
         </div>
        </div>
     </div>
@@ -424,10 +426,10 @@
               <div class="pb-[6.5px] w-[291.5px] h-[208.9px] px-[9.7px]">
                 <h1 class="text-xl font-semibold text-neutral-400 pb-[13px]">ABOUT US</h1>
                   <ul class=" mb-[3rem] text-[#555] font-semibold text-lg ">
-                  <li class=" pb-[10.2px]">About Us</li>
-                    <li class=" pb-[10.2px]">Contact Us</li>
-                    <li class=" pb-[10.2px]">Leave Us Feedback</li>
-                    <li class=" pb-[10.2px]">Blog</li>
+                    <RouterLink to="About_us"> <li class=" pb-[10.2px]">About Us</li></RouterLink>
+                   <RouterLink to="Contact_us"> <li class=" pb-[10.2px]">Contact Us</li></RouterLink>
+                   <RouterLink to="Feedback"><li class=" pb-[10.2px]">Leave Us Feedback</li></RouterLink>
+                    <RouterLink to="Blog"> <li class=" pb-[10.2px]">Blog</li></RouterLink>
                   </ul>
                
               </div>
@@ -435,12 +437,12 @@
                <div class="pb-[6.5px] w-[291.5px] sm:h-[310px] xl:h-[208.9px] px-[9.7px]">
                 <h1 class="text-xl font-semibold text-neutral-400 pb-[13px]">USEFUL LINKS</h1>
                   <ul class=" mb-[3rem] text-[#555] font-semibold text-lg ">
-                  <li class=" pb-[10.2px]">How it works?</li>
-                    <li class=" pb-[10.2px]">Clankart Teleport</li>
-                    <li class=" pb-[10.2px]">Frequenty Asked Questions[FAQs]</li>
-                    <li class=" pb-[10.2px]">Chat Guidlines</li>
-                    <li class=" pb-[10.2px]">Terms of Use/Listing Policy/</li>
-                    <li class=" pb-[10.2px]">Privacy Policy</li>
+                 <RouterLink to="/How_it_works"> <li class=" pb-[10.2px]">How it works?</li></RouterLink>
+                 <RouterLink to="/Clankart_teleport"><li class=" pb-[10.2px]">Clankart Teleport</li></RouterLink>
+                 <RouterLink to="/Faq`s"><li class=" pb-[10.2px]">Frequenty Asked Questions[FAQs]</li></RouterLink>
+                 <RouterLink to="Chat_guide"><li class=" pb-[10.2px]">Chat Guidlines</li></RouterLink>
+                 <li class=" pb-[10.2px]"><RouterLink to="Terms_of_use"><span>Terms of Use/</span></RouterLink><RouterLink to="Listing_policy"><span>listing Policy/</span></RouterLink></li>
+                 <RouterLink to="/Privacy_policy"><li class=" pb-[10.2px]">Privacy Policy</li></RouterLink>
                   </ul>
                
               </div>
