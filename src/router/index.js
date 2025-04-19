@@ -20,6 +20,7 @@ import How_it_works from '../views/How_it_works_page.vue';
 import Feedback from '../views/Feedback.vue';
 import View_all from '../views/View_all.vue'
 import Post_ab from '../views/Post_ab.vue'
+import Books from '../views/Books.vue';
 //define routes , each route should map to a component
 const routes = [
     {
@@ -97,6 +98,11 @@ const routes = [
         path: '/post-ad',
         name:'post-ad',
         component: Post_ab
+    },
+    {
+        path: '/Books',
+        name:'Books',
+        component: Books
     },
 ]
 
